@@ -2,7 +2,7 @@
 
 #脚本使用
 # 
-#   wget -N --no-check-certificate -q -O .sh "https://raw.githubusercontent.com/jth445600/hello-world/master/wordpress.sh" && chmod +x wordpress.sh && bash wordpress.sh
+#   wget -N --no-check-certificate -q -O wordpress.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/wordpress.sh" && chmod +x wordpress.sh && bash wordpress.sh
 #
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
@@ -180,3 +180,4 @@ EOT
     green "本次安装检测信息如下："
     ps -aux | grep -e nginx -e xray -e mysql -e php
 }
+install_wordpress
