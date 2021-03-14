@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #使用方法 
 #wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/wordpress-v2ray" && chmod +x install.sh && bash install.sh
 
@@ -11,14 +12,21 @@ cd "$(
     pwd
 )" || exit
 #====================================================
-#	System Request:Centos 7+
-#	Author:	wulabing
-#	Dscription: V2ray ws+tls onekey Management
-#	Version: 1.0
-#	email:admin@wulabing.com
-#	Official document: www.v2ray.com
+#   System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
+#   Author: wulabing
+#   Dscription: V2ray ws+tls onekey Management
+#   Version: 1.0
+#   email:admin@wulabing.com
+#   Official document: www.v2ray.com
 #====================================================
 
+#fonts color
+Green="\033[32m"
+Red="\033[31m"
+# Yellow="\033[33m"
+GreenBG="\033[42;37m"
+RedBG="\033[41;37m"
+Font="\033[0m"
 
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
@@ -35,22 +43,17 @@ yellow(){
 source /etc/os-release
 RELEASE=$ID
 VERSION=$VERSION_ID
-
+green "== 仅适用于centos7版本"
 green "== Time  : $(date +"%Y-%m-%d %H:%M:%S")"
 green "== OS    : $RELEASE $VERSION"
 green "== Kernel: $(uname -r)"
 green "== User  : $(whoami)"
+mkdir /usr/share
+mkdir /usr/share/nginx
+mkdir /usr/share/nginx/html
 sleep 2s
 
 
-
-#fonts color
-Green="\033[32m"
-Red="\033[31m"
-# Yellow="\033[33m"
-GreenBG="\033[42;37m"
-RedBG="\033[41;37m"
-Font="\033[0m"
 
 #notification information
 # Info="${Green}[信息]${Font}"
@@ -254,7 +257,6 @@ EOT
     green "本次安装检测信息如下："
     ps -aux | grep -e nginx -e xray -e mysql -e php
 }
-
 
 check_system() {
     if [[ "${ID}" == "centos" && ${VERSION_ID} -ge 7 ]]; then
@@ -653,8 +655,6 @@ port_exist_check() {
         sleep 1
     fi
 }
-
-##this part is to install ssl 
 acme() {
     if "$HOME"/.acme.sh/acme.sh --issue -d "${domain}" --standalone -k ec-256 --force --test; then
         echo -e "${OK} ${GreenBG} SSL 证书测试签发成功，开始正式签发 ${Font}"
@@ -724,16 +724,9 @@ nginx_conf_add() {
         ssl_protocols         TLSv1.3;
         ssl_ciphers           TLS13-AES-256-GCM-SHA384:TLS13-CHACHA20-POLY1305-SHA256:TLS13-AES-128-GCM-SHA256:TLS13-AES-128-CCM-8-SHA256:TLS13-AES-128-CCM-SHA256:EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
         server_name           serveraddr.com;
-        index index.php index.html index.htm;
-        root  /usr/share/nginx/html/;
+        index index.html index.htm;
+        root  /home/wwwroot/3DCEList;
         error_page 400 = /400.html;
-
-        location ~ \.php$ {
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
-        fastcgi_index index.php;
-        include fastcgi_params;
-    }
 
         # Config for 0-RTT in TLSv1.3
         ssl_early_data on;
@@ -1016,7 +1009,9 @@ mtproxy_sh() {
 }
 
 uninstall_all() {
-    yum remove -y php74 php74-php-gd  php74-php-pdo php74-php-opcache php74-php-mbstring php74-php-cli php74-php-fpm php74-php-mysqlnd mysql
+	rm -rf /etc/nginx
+    rm -rf /usr/share/nginx/html/*
+	yum remove -y php74 php74-php-gd  php74-php-pdo php74-php-opcache php74-php-mbstring php74-php-cli php74-php-fpm php74-php-mysqlnd mysql
     rm -rf /var/lib/mysql
     rm -rf /usr/lib64/mysql
     rm -rf /usr/share/mysql
@@ -1056,6 +1051,20 @@ judge_mode() {
         fi
     fi
 }
+
+last_config() {
+	sed -i "s:root  /home/wwwroot/3DCEList:root  /usr/hsare:g" /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i 's/index index.html index.htm/index index.php index.html index.htm/g' /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i '11a location ~ \.php$ {' /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i '12a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf/conf.d/v2ray.conf 
+	sed -i '13a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i '14a fastcgi_index index.php;' /etc/nginx/conf/conf.d/v2ray.conf 
+	sed -i '15a include fastcgi_params;' /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i '16a   }' /etc/nginx/conf/conf.d/v2ray.conf
+
+	systemctl restart nginx.service
+}
+
 install_v2ray_ws_tls() {
     is_root
     check_system
@@ -1083,9 +1092,34 @@ install_v2ray_ws_tls() {
     enable_process_systemd
     acme_cron_update
     install_wordpress
+    last_config
     show_information
-}
 
+}
+install_v2_h2() {
+    is_root
+    check_system
+    chrony_install
+    dependency_install
+    basic_optimization
+    domain_check
+    old_config_exist_check
+    port_alterid_set
+    v2ray_install
+    port_exist_check 80
+    port_exist_check "${port}"
+    v2ray_conf_add_h2
+    ssl_judge_and_install
+    vmess_qr_config_h2
+    basic_information
+    vmess_qr_link_image
+    show_information
+    start_process_systemd
+    enable_process_systemd
+
+
+
+}
 update_sh() {
     ol_version=$(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/${github_branch}/install.sh | grep "shell_version=" | head -1 | awk -F '=|"' '{print $3}')
     echo "$ol_version" >$version_cmp
@@ -1134,16 +1168,15 @@ list() {
 
 menu() {
     update_sh
-    echo -e "\t V2Ray+ws+tls+wordpress一键安装 ${Red}[${shell_version}]${Font}"
-    echo -e "\t---基于wulabing脚本修改---"
-    echo -e "\t--- 目前只能用于centos7系统---"
-     echo -e "\t--- 目前只能用于centos7系统---"
-      echo -e "\t--- 目前只能用于centos7系统---"
-       echo -e "\t--- 处于测试阶段---"
+    echo -e "\t V2ray 安装管理脚本 ${Red}[${shell_version}]${Font}"
+    echo -e "\t---authored by wulabing---"
+    echo -e "\thttps://github.com/wulabing\n"
     echo -e "当前已安装版本:${shell_mode}\n"
 
     echo -e "—————————————— 安装向导 ——————————————"""
-    echo -e "${Green}1.${Font}  安装 V2Ray (Nginx+ws+tls+wordpress)"
+  	echo -e "${Green}1.${Font}  安装 V2Ray (Nginx+ws+tls)"
+    
+    echo -e "${Green}3.${Font}  升级 V2Ray core"
     echo -e "—————————————— 配置变更 ——————————————"
     echo -e "${Green}4.${Font}  变更 UUID"
     echo -e "${Green}5.${Font}  变更 alterid"
@@ -1169,7 +1202,13 @@ menu() {
         shell_mode="ws"
         install_v2ray_ws_tls
         ;;
-           
+    2)
+        shell_mode="h2"
+        install_v2_h2
+        ;;
+    3)
+        bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/${github_branch}/v2ray.sh)
+        ;;
     4)
         read -rp "请输入UUID:" UUID
         modify_UUID
@@ -1238,3 +1277,5 @@ menu() {
 
 judge_mode
 list "$1"
+
+
