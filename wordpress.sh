@@ -2,7 +2,7 @@
 
 #脚本使用
 # 
-#   wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/wordpress.sh" && chmod +x wordpress.sh && bash wordpress.sh
+#   wget -N --no-check-certificate -q -O .sh "https://raw.githubusercontent.com/jth445600/hello-world/master/wordpress.sh" && chmod +x wordpress.sh && bash wordpress.sh
 #
 blue(){
     echo -e "\033[34m\033[01m$1\033[0m"
