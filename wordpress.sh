@@ -19,7 +19,7 @@ yellow(){
 source /etc/os-release
 RELEASE=$ID
 VERSION=$VERSION_ID
-green "== Script: atrandys/xray/install_wp.sh"
+
 green "== Time  : $(date +"%Y-%m-%d %H:%M:%S")"
 green "== OS    : $RELEASE $VERSION"
 green "== Kernel: $(uname -r)"
