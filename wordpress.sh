@@ -26,13 +26,6 @@ green "== Kernel: $(uname -r)"
 green "== User  : $(whoami)"
 sleep 2s
 
- green " ======================================================"
-    green " 描述：v2ray + tcp + xtls + wordpress一键安装脚本"
-    green " 系统：目前支持centos7"
-    green " 作者：atrandys  www.atrandys.com"
-    green " laurence修改 www.test3.445600.gq"
-    green " ======================================================"
-
 install_wordpress(){
     green "$(date +"%Y-%m-%d %H:%M:%S") ==== 安装wordpress"
     yum install -y iptables-services
