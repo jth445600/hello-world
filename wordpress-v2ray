@@ -1053,7 +1053,7 @@ judge_mode() {
 }
 
 last_config() {
-	sed -i "s:root  /home/wwwroot/3DCEList:root  /usr/hsare:g" /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i "s:root  /home/wwwroot/3DCEList:root  /usr/share/nginx/html:g" /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i 's/index index.html index.htm/index index.php index.html index.htm/g' /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i '11a location ~ \.php$ {' /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i '12a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf/conf.d/v2ray.conf 
