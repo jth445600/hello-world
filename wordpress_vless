@@ -246,12 +246,6 @@ server {
     index index.php index.html;
     ssl_certificate /usr/local/etc/xray/cert/fullchain.cer; 
     ssl_certificate_key /usr/local/etc/xray/cert/private.key;
-     location ~ \.php$ {
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
-        fastcgi_index index.php;
-        include fastcgi_params;
-    }
     location /$newpath {
         proxy_redirect off;
         proxy_pass http://127.0.0.1:11234; 
@@ -308,12 +302,12 @@ change_2_ws_nginx(){
 last_config() {
     
     sed -i "/rewrite/c \\\treturn 301 https://${your_domain}\$request_uri;"  /etc/nginx/conf.d/default.conf
-   # sed -i '12a location ~ /\.php$ {' /etc/nginx/conf.d/default.conf
-    #sed -i '13a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf.d/default.conf 
-    #sed -i '14a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf.d/default.conf
-    #sed -i '15a fastcgi_index index.php;' /etc/nginx/conf.d/default.conf 
-    #sed -i '16a include fastcgi_params;' /etc/nginx/conf.d/default.conf
-    #sed -i '17a   }' /etc/nginx/conf.d/default.conf
+    sed -i '12a location ~ /\.php$ {' /etc/nginx/conf.d/default.conf
+    sed -i '13a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf.d/default.conf 
+    sed -i '14a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf.d/default.conf
+    sed -i '15a fastcgi_index index.php;' /etc/nginx/conf.d/default.conf 
+    sed -i '16a include fastcgi_params;' /etc/nginx/conf.d/default.conf
+    sed -i '17：a   }' /etc/nginx/conf.d/default.conf
 
     systemctl restart nginx.service
 }
