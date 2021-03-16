@@ -246,6 +246,12 @@ server {
     index index.php index.html;
     ssl_certificate /usr/local/etc/xray/cert/fullchain.cer; 
     ssl_certificate_key /usr/local/etc/xray/cert/private.key;
+     location ~ \.php$ {
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
     location /$newpath {
         proxy_redirect off;
         proxy_pass http://127.0.0.1:11234; 
