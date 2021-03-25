@@ -1055,7 +1055,7 @@ judge_mode() {
 last_config() {
 	sed -i "s:root  /home/wwwroot/3DCEList:root  /usr/share/nginx/html:g" /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i 's/index index.html index.htm/index index.php index.html index.htm/g' /etc/nginx/conf/conf.d/v2ray.conf
-	sed -i '11a location ~ /\.php$ {' /etc/nginx/conf/conf.d/v2ray.conf
+	sed -i '11a location ~ \.php$ {' /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i '12a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf/conf.d/v2ray.conf 
 	sed -i '13a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i '14a fastcgi_index index.php;' /etc/nginx/conf/conf.d/v2ray.conf 
@@ -1174,7 +1174,7 @@ menu() {
     echo -e "当前已安装版本:${shell_mode}\n"
 
     echo -e "—————————————— 安装向导 ——————————————"""
-  	echo -e "${Green}1.${Font}  安装 V2Ray (Nginx+ws+tls+wordpress)"
+  	echo -e "${Green}1.${Font}  安装 V2Ray (Nginx+ws+tls)"
     
     echo -e "${Green}3.${Font}  升级 V2Ray core"
     echo -e "—————————————— 配置变更 ——————————————"
