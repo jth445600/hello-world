@@ -785,7 +785,7 @@ function start_menu(){
     echo -e "\033[34m\033[01m描述：\033[0m \033[32m\033[01mxray+ws+tls+wordpress一键安装脚本\033[0m"
     echo -e "\033[34m\033[01m系统：\033[0m \033[32m\033[01m仅仅支持centos7\033[0m"
     green "======================================================="
-    green " 1. 安装 xray: vless+ws+tls(CDN可用)"
+    green " 1. 安装 xray: vless+ws+tls+wordpress(CDN可用)"
     red " 2. 删除 xray"
     green " 3. 查看配置参数"
     yellow " 0. Exit"
