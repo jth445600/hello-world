@@ -913,8 +913,8 @@ basic_information() {
 }
 show_information() {
     cat "${v2ray_info_file}"
-    green "免费爬虫网址：在浏览器打开 域名/free 即可"
-    green "注意：爬虫工具没有配置开机自启，需要手动启动。 使用如下命令启动"
+    green "免费爬虫网址：在浏览器打开 $domain/free 即可"
+    green "注意：爬虫工具没有配置开机自启，重启后需要手动启动。 使用如下命令启动"
     red "nohup /root/free/proxypool -c config.yaml >/dev/null 2>/dev/null &"
 }
 ssl_judge_and_install() {
