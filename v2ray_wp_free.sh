@@ -233,7 +233,8 @@ EOT
     sleep 1s
     mkdir /usr/share/nginx
     mkdir /usr/share/nginx/html
-    cd /usr/share/nginx/html
+    mkdir /usr/share/nginx/html/wp
+    cd /usr/share/nginx/html/wp
     mv /usr/share/wordpresstemp/latest-zh_CN.zip ./
     unzip latest-zh_CN.zip
     mv wordpress/* ./
@@ -249,7 +250,7 @@ EOT
     #echo "define('FS_METHOD', "direct");" >> /usr/share/nginx/html/wp-config.php
     chown -R apache:apache /usr/share/nginx/html/
     #chmod 775 apache:apache /usr/share/nginx/html/ -Rf
-    chmod -R 755 /usr/share/nginx/html/wp-content
+    chmod -R 755 /usr/share/nginx/html/wp/wp-content
     green "=========================================================================="
     green " WordPress服务端配置已完成，请打开浏览器访问您的域名进行前台配置"
     green " 数据库密码等信息参考文件：/usr/share/nginx/html/wp-config.php"
@@ -1061,6 +1062,8 @@ download_pc(){
     green "  1.安装爬虫"
     green "==============="
     sleep 1
+    cd /root
+    mkdir free
     cd /root/free
     wget https://github.com/Sansui233/proxypool/releases/download/v0.6.0/proxypool-linux-amd64-v0.6.0.gz
     gzip -d proxypool-linux-amd64-v0.6.0.gz
@@ -1113,7 +1116,7 @@ last_config() {
 	sed -i '15a include fastcgi_params;' /etc/nginx/conf/conf.d/v2ray.conf
 	sed -i '16a   }' /etc/nginx/conf/conf.d/v2ray.conf
 
-sed -i '11a location /free { \
+sed -i '11a location / { \
 proxy_pass http://127.0.0.1:12580/;\
 }' /etc/nginx/conf/conf.d/v2ray.conf 
 
