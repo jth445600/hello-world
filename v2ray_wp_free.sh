@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #使用方法 
-#wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/wordpress-v2ray" && chmod +x install.sh && bash install.sh
+#wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/v2ray_wp_free.sh" && chmod +x install.sh && bash install.sh
 
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
