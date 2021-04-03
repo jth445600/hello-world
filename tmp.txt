@@ -105,7 +105,7 @@ upstream wp_server{
     "uploader": "github", 
    "github": {
   "repo": "jth445600/picgo", 
-  "token": "4cd14dd3a99bc8f223effdc993f78a662cbff342", 
+  "token": "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", 
   "path": "img/", 
   "customUrl": "https://raw.githubusercontent.com/jth445600/picgo/master", 
   "branch": "main" 
@@ -124,7 +124,7 @@ upstream wp_server{
     "uploader": "github", 
    "github": {
   "repo": "jth445600/picgo", 
-  "token": "4cd14dd3a99bc8f223effdc993f78a662cbff342", 
+  "token": "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", 
   "path": "img/", 
   "customUrl": "https://empty-bird-4e39.jth445600.workers.dev/jth445600/picgo/master", 
   "branch": "main" 
@@ -140,7 +140,7 @@ upstream wp_server{
     "uploader": "github", 
    "github": {
   "repo": "jth445600/picgo", 
-  "token": "4cd14dd3a99bc8f223effdc993f78a662cbff342", 
+  "token": "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", 
   "path": "img/", 
   "customUrl": "https://cdn.jsdelivr.net/gh/jth445600/picgo@master", 
   "branch": "main" 
