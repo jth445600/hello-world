@@ -1,0 +1,173 @@
+
+
+##添加规则
+sudo iptables -t nat -N REDSOCKS
+sudo iptables -t nat -A REDSOCKS -d 104.19.52.88 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 0.0.0.0/8 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 10.0.0.0/8 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 127.0.0.0/8 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 169.254.0.0/16 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 172.16.0.0/12 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
+sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
+sudo iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
+sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
+curl myip.ipip.net
+
+
+
+##########
+
+Telegram api： 1715543
+
+
+803b8b20ef128b856f80a2f69a834640
+
+#树莓派gclone 配置文件#############
+
+/home/pi/folderrclone/accounts/5498f945db90f791aefdadeda373bfb3163af454.json
+
+/home/pi/folderrclone/accounts/
+
+
+
+#do  gclone 配置文件#############
+
+
+/root/folderrclone/accounts/00237f5b0e4f6327ed3eb6e61059beec81c1b739.json
+
+/root/folderrclone/accounts/
+
+##删除规则——————————————————————————————
+
+sudo iptables -t nat -D REDSOCKS -d 104.19.52.88 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 0.0.0.0/8 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 10.0.0.0/8 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 127.0.0.0/8 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 169.254.0.0/16 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 172.16.0.0/12 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 192.168.0.0/16 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 224.0.0.0/4 -j RETURN
+sudo iptables -t nat -D REDSOCKS -d 240.0.0.0/4 -j RETURN
+sudo iptables -t nat -D REDSOCKS -p tcp -j REDIRECT --to-ports 12345
+sudo iptables -t nat -D OUTPUT -p tcp -j REDSOCKS
+curl myip.ipip.net
+
+
+#####################################################################
+##
+
+
+export proxy="http://127.0.0.1:2334"
+export http_proxy=$proxy
+
+
+python masshare.py -d 0AHcmWYDor3dSUk9PVA
+
+#python3 rclone_sa_magic.py -s 1vUjTU_WU5LEKMUqExbtPjIz5IcGkdiWI -d 0ACSrZb_dKIJEUk9PVA -dp /5.15 -b 1 -e 200
+
+#纯净linux系统安装
+
+bash InstallNET.sh -u 16.04 -v 64 -a --ip-addr 10.170.0.12 --ip-gate 10.170.0.1 --ip-mask 255.255.255.0 
+
+wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod a+x InstallNET.sh
+
+###利用rclone挂载Google drive
+
+mkdir /home/gdrive
+/usr/bin/rclone mount jth: /home/gdrive \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --buffer-size 32M \
+ --dir-cache-time 12h \
+ --vfs-read-chunk-size 64M \
+ --vfs-read-chunk-size-limit 1G &
+
+#cccf
+
+mkdir /home/ccsf
+
+/usr/bin/rclone mount ccsf: /home/ccsf \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --buffer-size 32M \
+ --dir-cache-time 12h \
+ --vfs-read-chunk-size 64M \
+ --vfs-read-chunk-size-limit 1G &
+
+
+	##树莓派专用挂载(需要root权限)
+
+mkdir /home/pi/jth
+sudo /usr/bin/rclone mount jth: /home/pi/jth \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --buffer-size 32M \
+ --dir-cache-time 12h \
+ --vfs-read-chunk-size 64M \
+ --vfs-read-chunk-size-limit 1G &
+ 
+mkdir /home/pi/ccsf
+
+sudo /usr/bin/rclone mount ccsf: /home/pi/ccsf \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --buffer-size 32M \
+ --dir-cache-time 12h \
+ --vfs-read-chunk-size 64M \
+ --vfs-read-chunk-size-limit 1G &
+
+--transfers
+
+
+#jobless24  
+
+
+
+ad806487-2d26-4636-98b6-ab85cc8521f7
+
+#jobless25
+
+ad806487-2d26-4636-98b6-ab85cc8521f7
+
+
+
+#####cloudflare的worker示例
+
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="ando.ghostloria.ml";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+
+
+
+
+
+
+/usr/bin/rclone mount gapp: /root/gapp \
+ --umask 0000 \
+ --default-permissions \
+ --allow-non-empty \
+ --allow-other \
+ --buffer-size 32M \
+ --dir-cache-time 12h \
+ --vfs-read-chunk-size 64M \
+ --vfs-read-chunk-size-limit 1G &
+
+ 
+ 4cd14dd3a99bc8f223effdc993f78a662cbff342

@@ -1,0 +1,178 @@
+欢迎在评论区留言
+视频中使用的博客地址：“Littleyu科学上网”https://yugogo.xyz/?p=1225
+ 视频中使用的文档地址：https://test3.445600.gq/wp/?p=130
+“Littleyu科学上网”搭建的免费梯子网站：https://yugogo.xyz/?page_id=3（使用方法见视频）
+自己搭建的免费梯子网站：https://v2ray.445600.ga/（使用方法见视频）
+
+04-在CentOS7用一键脚本安装爬虫自动爬取公网免费节点
+
+
+return 301 https://${your_domain}$request_uri;
+echo return 301 https://${your_domain}$request_uri;
+
+return 301 https://${your_domain}'$request_uri';
+
+
+sed  '1a return 301 https://${your_domain}'$request_uri';' test.sh
+
+sed  "/return/c \\\treturn 301 https://${domain}\$request_uri;"  test.sh
+
+
+
+
+https://raw.githubusercontent.com/atrandys/v2ray-ws-tls/master/v2ray_ws_tls_with_wp.sh
+
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/atrandys/v2ray-ws-tls/master/v2ray_ws_tls1.3.sh" && chmod +x install.sh && bash install.sh
+
+
+
+sed -i "/rewrite/c \\\treturn 301 https://${your_domain}\$request_uri;"  test2
+    sed -i '13a location ~ /\.php$ {' test2
+    sed -i '14a fastcgi_pass 127.0.0.1:9000;' test2
+    sed -i '15a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' test2
+    sed -i '16a include fastcgi_params;' test2
+    sed -i '17a   }' test2
+
+sed -i "/rewrite/c \\\treturn 301 https://${your_domain}\$request_uri;"  test2
+sed -i "/test/c \\\location "  test2
+
+ sed -i '13a location ~ /\.php$ {' test2
+    sed -i '14a fastcgi_pass 127.0.0.1:9000;' test2
+    sed -i '15a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' test2
+    sed -i '16a include fastcgi_params;' test2
+    sed -i '17a   }' test2
+
+sed '11a location /free { \ 
+proxy_pass http://127.0.0.1:12580/; \ 
+} ' test2
+
+
+
+如果打开域名之后，只是出现下载。可以试一下开一个无痕窗口访问该域名  Nginx 启动 完成 
+[OK]  V2ray 启动 完成 
+
+
+     server {
+        listen       80;
+        server_name  localhost;
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+		error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }  
+    }
+
+
+高清版本-高等数学-同济七版-第二章-
+
+更多视频点击我的头像，查看播放列表
+
+英语阅读,四级,大学英语,六级,英语名著
+
+高等数学,同济七版,考研数学
+
+
+
+
+
+
+更多视频点击我的头像，查看播放列表
+
+upstream wp_server{
+        server forth.445600.ga:90;
+    }
+
+------------------------------------
+
+{
+  "picBed": {
+    "uploader": "smms", 
+    "smms": {
+      "token": "C73FWdFlbS4H4uD0CSHq5f4axihd4BXP"
+    }
+  },
+  "picgoPlugins": {}
+}
+
+
+-------------
+----------------------------
+{
+  "picBed": {
+    "uploader": "github", 
+   "github": {
+  "repo": "jth445600/picgo", 
+  "token": "4cd14dd3a99bc8f223effdc993f78a662cbff342", 
+  "path": "img/", 
+  "customUrl": "https://raw.githubusercontent.com/jth445600/picgo/master", 
+  "branch": "main" 
+}
+    
+  },
+  "picgoPlugins": {} 
+}
+
+
+-------------------------------
+
+
+{
+  "picBed": {
+    "uploader": "github", 
+   "github": {
+  "repo": "jth445600/picgo", 
+  "token": "4cd14dd3a99bc8f223effdc993f78a662cbff342", 
+  "path": "img/", 
+  "customUrl": "https://empty-bird-4e39.jth445600.workers.dev/jth445600/picgo/master", 
+  "branch": "main" 
+}
+    
+  },
+  "picgoPlugins": {} 
+}
+
+-------------------------------
+{
+  "picBed": {
+    "uploader": "github", 
+   "github": {
+  "repo": "jth445600/picgo", 
+  "token": "4cd14dd3a99bc8f223effdc993f78a662cbff342", 
+  "path": "img/", 
+  "customUrl": "https://cdn.jsdelivr.net/gh/jth445600/picgo@master", 
+  "branch": "main" 
+}
+    
+  },
+  "picgoPlugins": {} 
+}
+
+
+
+
+
+
+1.打开网卡混杂模式
+
+sudo ip link set ens33 promisc on
+
+2.创建网络 (须结合实际网络情况，不能照抄命令)
+
+docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o parent=ens33 macnet
+
+使用 docker network ls命令可以看到网络macnet已建立成功：
+
+3.拉取镜像 docker pull hou6807628/openwrt:x86_generic 镜像拉取完成后，我们可以执行docker images命令查看现存镜像
+
+4.创建并启动容器 docker run --restart always --name openwrt -d --network macnet --privileged hou6807628/openwrt:x86_generic /sbin/init 启动容器后，我们可以使用 docker ps -a命令查看当前运行的容器： 若容器运行信息STATUS列为 UP状态，则说明容器运行正常。
+
+5.进入容器并修改相关参数 (须结合实际网络情况，不能照抄配置) docker exec -it openwrt bash 其中： openwrt为容器名称； bash为进入容器后执行的命令。 执行此命令后我们便进入 OpenWrt 的命令行界面，首先，我们需要编辑 OpenWrt 的网络配置文件： vim /etc/config/network 我们需要更改 Lan 口设置：
+
+6.重启网络
+
+/etc/init.d/network restart
+
+
