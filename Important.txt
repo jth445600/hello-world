@@ -155,6 +155,28 @@ fetch(request)
 )
 
 
+发卡成功,本次共发卡1张！,卡密内容：
+2019GITHUB50-7ee2b930
+
+upstream wp_server{
+        server forth.445600.ga:90;
+    }
+
+------------------------------------
+
+{
+  "picBed": {
+    "uploader": "smms", 
+    "smms": {
+      "token": "C73FWdFlbS4H4uD0CSHq5f4axihd4BXP"
+    }
+  },
+  "picgoPlugins": {}
+}
+
+
+-------------
+
 
 
 
@@ -170,4 +192,57 @@ fetch(request)
  --vfs-read-chunk-size-limit 1G &
 
  
- 4cd14dd3a99bc8f223effdc993f78a662cbff342
+
+
+ -------------
+----------------------------
+{
+  "picBed": {
+    "uploader": "github", 
+   "github": {
+  "repo": "jth445600/picgo", 
+  "token": "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", 
+  "path": "img/", 
+  "customUrl": "https://raw.githubusercontent.com/jth445600/picgo/master", 
+  "branch": "main" 
+}
+    
+  },
+  "picgoPlugins": {} 
+}
+
+
+-------------------------------
+
+
+{
+  "picBed": {
+    "uploader": "github", 
+   "github": {
+  "repo": "jth445600/picgo", 
+  "token": "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", 
+  "path": "img/", 
+  "customUrl": "https://empty-bird-4e39.jth445600.workers.dev/jth445600/picgo/master", 
+  "branch": "main" 
+}
+    
+  },
+  "picgoPlugins": {} 
+}
+
+-------------------------------
+{
+  "picBed": {
+    "uploader": "github", 
+   "github": {
+  "repo": "jth445600/picgo", 
+  "token": "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", 
+  "path": "img/", 
+  "customUrl": "https://cdn.jsdelivr.net/gh/jth445600/picgo@master", 
+  "branch": "main" 
+}
+    
+  },
+  "picgoPlugins": {} 
+}
+
