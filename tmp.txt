@@ -105,7 +105,7 @@ upstream wp_server{
     "uploader": "github", 
    "github": {
   "repo": "jth445600/picgo", 
-  "token": "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", 
+  "token": "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", 
   "path": "img/", 
   "customUrl": "https://raw.githubusercontent.com/jth445600/picgo/master", 
   "branch": "main" 
@@ -124,7 +124,7 @@ upstream wp_server{
     "uploader": "github", 
    "github": {
   "repo": "jth445600/picgo", 
-  "token": "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", 
+  "token": "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", 
   "path": "img/", 
   "customUrl": "https://empty-bird-4e39.jth445600.workers.dev/jth445600/picgo/master", 
   "branch": "main" 
@@ -140,7 +140,7 @@ upstream wp_server{
     "uploader": "github", 
    "github": {
   "repo": "jth445600/picgo", 
-  "token": "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", 
+  "token": "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", 
   "path": "img/", 
   "customUrl": "https://cdn.jsdelivr.net/gh/jth445600/picgo@master", 
   "branch": "main" 
@@ -176,3 +176,41 @@ docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -
 /etc/init.d/network restart
 
 
+
+我的电报地址： https://t.me/Laurence666
+-------------------------------------------------------------------------------------------------
+
+免费梯子网站：   https://445600.ml/freeproxy.html
+
+免费梯子使用方法见视频      https://youtu.be/KpMamdb6DaM
+----------------------------------------------------------------------------------------
+往期节目：
+
+14-玩转谷歌网盘-01-2021最新方法-申请免费无限容量的谷歌团队盘
+https://youtu.be/QR9OlCLSwh8
+13-在树莓派等linux设备上配置 v2ray 客户端实现科学上网
+https://youtu.be/kMQqb1C_6tA
+12-使用一键脚本在CentOS7上搭建v2ray+wordpress+免费节点爬虫（支持CDN）
+https://youtu.be/YbAB-9Zqz2I
+11-简单两步制作自己的节点订阅链接
+https://youtu.be/3R3P1Zs_hxw
+10-使用一键脚本在CentOS7上搭建Xray+tcp+xtls+wordpress
+https://youtu.be/8s0VaMvOhlQ
+09-使用一键安装脚本在vps上搭建Xray （三合一脚本/七合一脚本）
+https://youtu.be/CcBO-9_qWn4
+08-在树莓派3B/4B的docker中运行 OpenWrt 旁路由
+https://youtu.be/6NHwnvsMPqk
+07-科学上网小白课-最新教程-在freenom申请免费域名-免费使用一年
+https://youtu.be/a4HTABfJp90
+06-科学上网小白课-virmach主机测评+v2ray搭建
+https://youtu.be/a4HTABfJp90
+05-使用一键脚本在CentOS7上搭建Xray+ws+tls+Wordpress并开启CDN
+https://youtu.be/61okjxNC1O0
+04-在CentOS7用一键脚本安装爬虫自动爬取公网免费节点
+https://youtu.be/KpMamdb6DaM
+03-在CentOS7上搭建Xray+ws+tls+Wordpress并开启CDN
+https://youtu.be/WTEaGUIMH8I
+02-使用一键安装脚本在CentOS7上搭建v2ray+ws+tls+wordpress+CDN
+https://youtu.be/bGuw4S0gPlg
+01-在centos7上搭建v2ray+ws+tls+wordpress并开启CDN
+https://youtu.be/dtTQBp-peCM
