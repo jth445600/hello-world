@@ -185,6 +185,10 @@ docker network create -d macvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -
 免费梯子使用方法见视频      https://youtu.be/KpMamdb6DaM
 ----------------------------------------------------------------------------------------
 往期节目：
+17- 免费v2ray&clash节点-最好用的SSR V2ray批量测速软件
+https://youtu.be/wV7uR1ncWsg
+16-玩转谷歌网盘-02-在树莓派或VPS上配置rclone+Google Drive
+https://youtu.be/h13dxKL9u3w
 15-4月4日分享-免费v2ray&clash节点分享免费机场-晚高峰1080流畅播放
 https://youtu.be/PmZ99v-39aM
 14-玩转谷歌网盘-01-2021最新方法-申请免费无限容量的谷歌团队盘
