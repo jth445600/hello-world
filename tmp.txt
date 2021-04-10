@@ -270,3 +270,17 @@ show_remote_speed: true # default false
 speedtest:   true   # default false
 connection:  3   # default 5
 timout:    20     # default 10
+
+
+if (x%2)
+  {
+    host = _01
+  } else
+  {
+    host = _02
+  }
+
+
+  第三期分享: https://wws.lanzous.com/iTZXGnwe50j
+
+密码:7agc
