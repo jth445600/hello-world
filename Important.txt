@@ -86,11 +86,11 @@ mkdir /home/gdrive
  --vfs-read-chunk-size 64M \
  --vfs-read-chunk-size-limit 1G &
 
-#cccf
+#twccu
 
-mkdir /home/ccsf
+mkdir /home/twccu
 
-/usr/bin/rclone mount ccsf: /home/ccsf \
+/usr/bin/rclone mount twccu: /home/twccu \
  --umask 0000 \
  --default-permissions \
  --allow-non-empty \
@@ -103,8 +103,8 @@ mkdir /home/ccsf
 
 	##树莓派专用挂载(需要root权限)
 
-mkdir /home/pi/jth
-sudo /usr/bin/rclone mount jth: /home/pi/jth \
+mkdir /home/pi/twccu
+sudo /usr/bin/rclone mount twccu: /home/pi/twccu \
  --umask 0000 \
  --default-permissions \
  --allow-non-empty \
@@ -114,6 +114,9 @@ sudo /usr/bin/rclone mount jth: /home/pi/jth \
  --vfs-read-chunk-size 64M \
  --vfs-read-chunk-size-limit 1G &
  
+ --transfers
+
+
 mkdir /home/pi/ccsf
 
 sudo /usr/bin/rclone mount ccsf: /home/pi/ccsf \
@@ -125,28 +128,18 @@ sudo /usr/bin/rclone mount ccsf: /home/pi/ccsf \
  --dir-cache-time 12h \
  --vfs-read-chunk-size 64M \
  --vfs-read-chunk-size-limit 1G &
-
 --transfers
 
 
-#jobless24  
 
-
-
-ad806487-2d26-4636-98b6-ab85cc8521f7
-
-#jobless25
-
-ad806487-2d26-4636-98b6-ab85cc8521f7
-
-
+=================================================
 
 #####cloudflare的worker示例
 
 addEventListener(
 "fetch",event => {
 let url=new URL(event.request.url);
-url.hostname="ando.ghostloria.ml";
+url.hostname="vir.445600.ga";
 let request=new Request(url,event.request);
 event. respondWith(
 fetch(request)
@@ -154,6 +147,122 @@ fetch(request)
 }
 )
 
+#####cloudflare的worker示例2  heroku
+
+const SingleDay = 'jobless04.herokuapp.com'
+const DoubleDay = 'jobless04.herokuapp.com'
+addEventListener(
+    "fetch",event => {
+    
+        let nd = new Date();
+        if (nd.getDate()%2) {
+            host = SingleDay
+        } else {
+            host = DoubleDay
+        }
+        
+        let url=new URL(event.request.url);
+        url.hostname=host;
+        let request=new Request(url,event.request);
+        event. respondWith(
+            fetch(request)
+        )
+    }
+)
+
+#####cloudflare的worker示例2  heroku-test
+
+	const _02 = 'jobless02.herokuapp.com'
+	const _04 = 'jobless04.herokuapp.com'
+	const _06 = 'jobless06.herokuapp.com'
+	const _08 = 'jobless08.herokuapp.com'
+	const _10 = 'jobless10.herokuapp.com'
+addEventListener(
+    "fetch",event => {
+    
+        let nd = new Date();
+        nd = nd.getMinutes()/12;
+        if (nd<1)
+      {
+          host= _02;
+      }
+        else if (nd<2)
+      {
+          host = _04;
+      }
+        else if (nd<3)
+      {
+          host = _06;
+      }
+        else if (nd<4)
+      {
+        host = _08;
+      }
+        else
+      {
+	      host =_10;
+      }
+        
+        let url=new URL(event.request.url);
+        url.hostname=host;
+        let request=new Request(url,event.request);
+        event. respondWith(
+            fetch(request)
+        )
+    }
+)
+
+
+======================================================
+
+
+
+
+# XIU2/CloudflareSpeedTest v1.4.10
+
+开始延迟测速（模式：TCP IPv4，端口：443，平均延迟上限：9999.00 ms）：
+17236 / 17236 [---------------------------------------------------------------------------------------------------------------------------] 100.00%
+开始下载测速（下载速度下限：0.00 MB/s，下载测速数量：20，下载测速队列：20）：
+20 / 20 [---------------------------------------------------------------------------------------------------------------------------------] 100.00%
+IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 (MB/s)
+104.19.30.140     4       4       0.00    165.07    13.73          
+104.19.13.190     4       4       0.00    156.69    13.69          
+104.19.17.201     4       4       0.00    173.11    13.66          
+104.19.29.29      4       4       0.00    155.98    13.61          
+104.19.49.241     4       4       0.00    178.51    13.58          
+104.19.73.196     4       4       0.00    185.45    13.51          
+104.19.75.155     4       4       0.00    185.09    13.49          
+104.19.1.248      4       4       0.00    158.43    13.21          
+104.19.3.239      4       4       0.00    166.27    13.10                  2021年4月11日03:48:25
+104.19.25.12      4       4       0.00    156.95    13.06          
+104.19.111.228    4       4       0.00    171.83    13.05          
+104.19.11.118     4       4       0.00    157.03    13.04          
+104.19.34.198     4       4       0.00    169.76    13.03          
+104.19.4.188      4       4       0.00    157.00    13.02          
+104.19.28.148     4       4       0.00    173.52    13.01          
+104.19.14.110     4       4       0.00    163.07    12.96          
+104.19.9.44       4       4       0.00    156.64    12.89          
+104.19.2.220      4       4       0.00    166.24    12.76          
+104.19.33.222     4       4       0.00    163.19    12.25          
+104.19.52.127     4       4       0.00    174.91    12.24  
+
+
+---------------------------------------------------------------
+pi@raspbian:~/workspace/cloudflarest$ ./CloudflareST -tl 100 -sl 9 -p 3
+# XIU2/CloudflareSpeedTest v1.4.10
+
+开始延迟测速（模式：TCP IPv4，端口：443，平均延迟上限：100.00 ms）：
+17236 / 17236 [---------------------------------------------------------------------------------------------------------------------------] 100.00%
+开始下载测速（下载速度下限：9.00 MB/s，下载测速数量：15，下载测速队列：15）：
+13 / 15 [---------------------------------------------------------------------------------------------------------------->_________________] 86.67%
+IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 (MB/s)
+198.41.209.116    4       4       0.00    96.50     13.51          
+104.16.9.48       4       4       0.00    97.08     13.50          
+104.16.11.114     4       4       0.00    98.28     13.50 
+
+
+
+================================================
 
 发卡成功,本次共发卡1张！,卡密内容：
 2019GITHUB50-7ee2b930
