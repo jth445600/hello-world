@@ -329,3 +329,75 @@ WantedBy=multi-user.target
         https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini
 
         https://do.445600.cf/conver/sub?target=clash&url=https%3A%2F%2F445600.ml%2Ftest.html&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini_MultiMode.ini
+
+
+
+
+
+
+
+        /usr/local/ServerStatus/web
+
+
+  {
+    "password": "xiaowen123",
+    "method": "aes-128-ctr",
+    "protocol": "auth_aes128_md5",
+    "protocol_param": "",
+    "obfs": "tls1.2_ticket_auth",
+    "obfs_param": "",
+
+    "udp": true,
+    "idle_timeout": 300,
+    "connect_timeout": 6,
+    "udp_timeout": 6,
+
+    "server_settings": {
+        "listen_address": "0.0.0.0",
+        "listen_port": 8080
+    },
+
+    "client_settings": {
+        "server": "jobless.eu-gb.cf.appdomain.cloud",
+        "server_port": 443,
+        "listen_address": "0.0.0.0",
+        "listen_port": 1080
+    },
+
+    "over_tls_settings": {
+        "enable": true,
+        "server_domain": "jobless.eu-gb.cf.appdomain.cloud",
+        "path": "/abZ58DzmBWAS79YO/",
+        "root_cert_file": ""
+    }
+}
+
+
+
+
+Congratulations, frps install completed!
+================================================
+You Server IP      : 128.199.106.33
+Bind port          : 7000
+KCP support        : true
+vhost http port    : 81
+vhost https port   : 554
+Dashboard port     : 7001
+token              : xiaowen123
+subdomain_host     : 128.199.106.33
+tcp_mux            : true
+Max Pool count     : 50
+Log level          : info
+Log max days       : 3
+Log file           : enable
+================================================
+frps Dashboard     : http://128.199.106.33:7001/
+Dashboard user     : laurence
+Dashboard password : xiaowen123
+================================================
+
+frps status manage : frps {start|stop|restart|status|config|version}
+Example:
+  start: frps start
+   stop: frps stop
+restart: frps restart
