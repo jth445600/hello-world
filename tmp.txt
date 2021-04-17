@@ -401,3 +401,12 @@ Example:
   start: frps start
    stop: frps stop
 restart: frps restart
+
+
+
+
+ ~/.acme.sh/acme.sh  --installcert  -d  tz.445600.cf   \
+        --key-file   /usr/local/ServerStatus/web/ssl/private.key \
+        --fullchain-file  /usr/local/ServerStatus/web/ssl/fullchain.cer \
+        --reloadcmd  "chmod -R 777 /usr/local/ServerStatus/web/ssl && systemctl restart nginx"
+    
