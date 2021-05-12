@@ -3478,12 +3478,13 @@ cronRenewTLS(){
 menu(){
     cd
     echoContent red "\n=============================================================="
-    echoContent green "作者：mack-a"
-    echoContent green "当前版本：v2.2.24"
-    echoContent green "Github：https://github.com/mack-a/v2ray-agent"
-    echoContent green "描述：七合一共存脚本"
+   # echoContent green "作者：mack-a"
+   # echoContent green "当前版本：v2.2.24"
+   # echoContent green "Github：https://github.com/mack-a/v2ray-agent"
+    echoContent green "描述：xray七合一共存脚本+wordpress"
+    echoContent green "仅支持centos7!!"
     echoContent red "=============================================================="
-    echoContent yellow "1.安装"
+    echoContent yellow "1.安装xray+wordpress"
     echoContent yellow "2.任意组合安装"
     echoContent skyBlue "-------------------------工具管理-----------------------------"
     echoContent yellow "3.查看账号"
