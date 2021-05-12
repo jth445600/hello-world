@@ -704,12 +704,7 @@ cat << EOF > /etc/nginx/conf.d/alone.conf
         index index.php index.html;
 #        location ~ /.well-known {allow all;}
 #        location /test {return 200 'fjkvymb6len';}
-         location ~ \.php$ {
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;
-        fastcgi_index index.php;
-        include fastcgi_params;
-    }
+         
     }
 EOF
 }

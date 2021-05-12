@@ -166,7 +166,27 @@ EOT
     chown -R apache:apache /usr/share/nginx/html/
     #chmod 775 apache:apache /usr/share/nginx/html/ -Rf
     chmod -R 755 /usr/share/nginx/html/wp-content
-    nginx -s stop
+    sed -i '14a location ~ \.php$ {' /etc/nginx/conf.d/alone.conf
+    sed -i '15a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf.d/alone.conf 
+    sed -i '16a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf.d/alone.conf
+    sed -i '17a fastcgi_index index.php;' /etc/nginx/conf.d/alone.conf 
+    sed -i '18a include fastcgi_params;' /etc/nginx/conf.d/alone.conf
+    sed -i '19a   }' /etc/nginx/conf.d/alone.conf
+    yum install lsof -y
+    port_exist_check() {
+    if [[ 0 -eq $(lsof -i:80 | grep -i -c "listen") ]]; then
+        echo -e " 80端口未被占用 "
+        sleep 1
+    else
+        echo -e "80端口被占用，以下为 80端口占用信息 80"
+        lsof -i:80
+        sleep 2
+        lsof -i:80 | awk '{print $2}' | grep -v "PID" | xargs kill -9
+        echo -e " kill 完成 "
+        sleep 1
+    fi
+    }
+    port_exist_check
     nginx
     green "=========================================================================="
     green " WordPress服务端配置已完成，请打开浏览器访问您的域名进行前台配置"
