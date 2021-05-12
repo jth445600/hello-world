@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # 检测区
 ##
-#使用方法  yum install wget vim -y && wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/shiyan5.sh" && chmod +x install.sh && bash install.sh
-#
+#使用方法  yum install wget vim -y && wget -N --no-check-certificate -q -O install.sh "https://cdn.jsdelivr.net/gh/jth445600/hello-world@master/shiyan5.sh" && chmod +x install.sh && bash install.sh
+#https://cdn.jsdelivr.net/gh/jth445600/picgo@master
 
 
 source /etc/os-release
@@ -3325,46 +3325,8 @@ customXrayInstall(){
 }
 # 选择核心安装---v2ray-core、xray-core、锁定版本的v2ray-core[xtls]
 selectCoreInstall(){
-    echoContent skyBlue "\n功能 1/${totalProgress} : 选择核心安装"
-    echoContent red "\n=============================================================="
-    echoContent yellow "1.Xray-core"
-    echoContent yellow "2.v2ray-core"
-    echoContent yellow "3.v2ray-core[XTLS]"
-    echoContent red "=============================================================="
-    read -p "请选择：" selectCoreType
-    case ${selectCoreType} in
-        1)
-
-           if [[ "${selectInstallType}" = "2" ]]
-            then
-                customXrayInstall
-            else
+   
                 xrayCoreInstall
-            fi
-        ;;
-        2)
-            v2rayCoreVersion=
-            if [[ "${selectInstallType}" = "2" ]]
-            then
-                customV2RayInstall
-            else
-                v2rayCoreInstall
-            fi
-        ;;
-        3)
-            v2rayCoreVersion=v4.32.1
-            if [[ "${selectInstallType}" = "2" ]]
-            then
-                customV2RayInstall
-            else
-                v2rayCoreInstall
-            fi
-        ;;
-        *)
-            echoContent red ' ---> 选择错误，重新选择'
-            selectCoreInstall
-        ;;
-    esac
 }
 
 
@@ -3439,6 +3401,7 @@ xrayCoreInstall(){
     sleep 1
     handleTrojanGo start
     # 生成账号
+    install_wordpress
     checkGFWStatue 16
     showAccounts 17
 }
@@ -3485,7 +3448,6 @@ menu(){
     echoContent green "仅支持centos7!!"
     echoContent red "=============================================================="
     echoContent yellow "1.安装xray+wordpress"
-    echoContent yellow "2.任意组合安装"
     echoContent skyBlue "-------------------------工具管理-----------------------------"
     echoContent yellow "3.查看账号"
     echoContent yellow "4.更换伪装站"
