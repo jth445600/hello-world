@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # 检测区
 ##
-#使用方法  yum install wget vim -y && wget -N --no-check-certificate -q -O install.sh "https://cdn.jsdelivr.net/gh/jth445600/hello-world@master/shiyan5.sh" && chmod +x install.sh && bash install.sh
+#使用方法1  yum install wget vim -y && wget -N --no-check-certificate -q -O install.sh "https://cdn.jsdelivr.net/gh/jth445600/hello-world@master/shiyan5.sh" && chmod +x install.sh && bash install.sh
 #https://cdn.jsdelivr.net/gh/jth445600/picgo@master
-
+##使用方法1  yum install wget vim -y && wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/shiyan5.sh" && chmod +x install.sh && bash install.sh
 
 source /etc/os-release
 RELEASE=$ID
