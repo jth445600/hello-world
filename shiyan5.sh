@@ -166,12 +166,12 @@ EOT
     chown -R apache:apache /usr/share/nginx/html/
     #chmod 775 apache:apache /usr/share/nginx/html/ -Rf
     chmod -R 755 /usr/share/nginx/html/wp-content
-    sed -i '14a location ~ \.php$ {' /etc/nginx/conf.d/alone.conf
-    sed -i '15a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf.d/alone.conf 
-    sed -i '16a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf.d/alone.conf
-    sed -i '17a fastcgi_index index.php;' /etc/nginx/conf.d/alone.conf 
-    sed -i '18a include fastcgi_params;' /etc/nginx/conf.d/alone.conf
-    sed -i '19a   }' /etc/nginx/conf.d/alone.conf
+    sed -i '15a location ~ \.php$ {' /etc/nginx/conf.d/alone.conf
+    sed -i '16a fastcgi_pass 127.0.0.1:9000;' /etc/nginx/conf.d/alone.conf 
+    sed -i '17a fastcgi_param SCRIPT_FILENAME /usr/share/nginx/html$fastcgi_script_name;' /etc/nginx/conf.d/alone.conf
+    sed -i '18a fastcgi_index index.php;' /etc/nginx/conf.d/alone.conf 
+    sed -i '19a include fastcgi_params;' /etc/nginx/conf.d/alone.conf
+    sed -i '20a   }' /etc/nginx/conf.d/alone.conf
     yum install lsof -y
     port_exist_check() {
     if [[ 0 -eq $(lsof -i:80 | grep -i -c "listen") ]]; then
