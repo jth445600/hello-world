@@ -180,3 +180,4 @@ EOT
     green "本次安装检测信息如下："
     ps -aux | grep -e nginx -e xray -e mysql -e php
 }
+install_wordpress
