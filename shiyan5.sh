@@ -769,6 +769,7 @@ cat << EOF >> /etc/nginx/conf.d/alone.conf
         listen 31300;
         server_name ${domain};
         root /usr/share/nginx/html;
+        index index.php index.html;
         # location / {
         #     add_header Strict-Transport-Security "max-age=63072000" always;
         # }
@@ -782,6 +783,7 @@ cat << EOF >> /etc/nginx/conf.d/alone.conf
             listen 31300;
             server_name ${domain};
             root /usr/share/nginx/html;
+            index index.php index.html;
             location / {
                 add_header Strict-Transport-Security "max-age=63072000" always;
             }
