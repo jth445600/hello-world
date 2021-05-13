@@ -447,7 +447,7 @@ IP 地址           已发送  已接收  丢包率  平均延迟  下载速度 
 
 =======================
  各种科学上网教程以及其他教程
-
+cloudflare IP优选工具  https://youtu.be/2agY6GLLte4
 freenom免费域名申请视频教程：https://youtu.be/a4HTABfJp90
 
 v2ray一键脚本搭建视频教程：https://youtu.be/bGuw4S0gPlg
@@ -464,8 +464,9 @@ xray+wordpress一键脚本视频教程:   https://youtu.be/61okjxNC1O0
 
 ----------------------------------------------------------------------------------------
 
-=========================================
 往期节目：
+31-cloudflare优选IP工具-使用cloudflare CDN提高科学上网速度
+https://youtu.be/2agY6GLLte4
 30-一键脚本安装xray/v2ray/trojan(八合一)+wordpress
 https://youtu.be/RmQjKt_AmdM
 29-freevps02-第二弹-使用免费容器heroku搭建v2ray/xray/trojan/ss多合一科学上网
