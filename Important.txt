@@ -63,10 +63,6 @@ export proxy="http://127.0.0.1:2334"
 export http_proxy=$proxy
 
 
-python masshare.py -d 0AHcmWYDor3dSUk9PVA
-
-#python3 rclone_sa_magic.py -s 1vUjTU_WU5LEKMUqExbtPjIz5IcGkdiWI -d 0ACSrZb_dKIJEUk9PVA -dp /5.15 -b 1 -e 200
-
 #纯净linux系统安装
 
 bash InstallNET.sh -u 16.04 -v 64 -a --ip-addr 10.170.0.12 --ip-gate 10.170.0.1 --ip-mask 255.255.255.0 
@@ -172,19 +168,22 @@ addEventListener(
 
 #####cloudflare的worker示例2  heroku-test
 
-	const _01 = 'jobless01.herokuapp.com'
-  const _02 = 'jobless02.herokuapp.com'
-	const _04 = 'jobless04.herokuapp.com'
-	const _06 = 'jobless06.herokuapp.com'
-	const _08 = 'jobless08.herokuapp.com'
-	const _10 = 'jobless10.herokuapp.com'
+	const _01 = 'xiaowen1.herokuapp.com'
+    const _02 = 'xiaowen2.herokuapp.com'
+    const _03 = 'xiaowen03.herokuapp.com'
+	const _04 = 'xiaowen4.herokuapp.com'
+	const _05 = 'xiaowen5.herokuapp.com'
+	const _06 = 'xiaowen6.herokuapp.com'
+	const _07 = 'xiaowen7.herokuapp.com'
+	const _08 = 'xiaowen8.herokuapp.com'
+	
 addEventListener(
     "fetch",event => {
     
         let nd = new Date();
         let x = 0; 
         x = nd.getDate();
-        nd = nd.getMinutes()/12;
+        nd = nd.getMinutes()/15;
         if (nd<1)
       {
           if (x%2)
@@ -197,19 +196,37 @@ addEventListener(
       }
         else if (nd<2)
       {
-          host = _04;
+           if (x%2)
+          {
+             host = _03
+           } else
+           {
+              host = _04
+            }
       }
         else if (nd<3)
       {
-          host = _06;
+           if (x%2)
+          {
+             host = _05
+           } else
+           {
+              host = _06
+            }
       }
         else if (nd<4)
       {
-        host = _08;
+         if (x%2)
+          {
+             host = _07
+           } else
+           {
+              host = _08
+            }
       }
         else
       {
-	      host =_10;
+	      host =jobless01.herokuapp.com;
       }
         
         let url=new URL(event.request.url);
