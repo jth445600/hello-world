@@ -176,14 +176,15 @@ addEventListener(
 	const _06 = 'xiaowen6.herokuapp.com'
 	const _07 = 'xiaowen7.herokuapp.com'
 	const _08 = 'xiaowen8.herokuapp.com'
-	
+	const _09 = 'xiaowen09.herokuapp.com'
+	const _10 = 'xiaowen10.herokuapp.com'
 addEventListener(
     "fetch",event => {
     
         let nd = new Date();
         let x = 0; 
         x = nd.getDate();
-        nd = nd.getMinutes()/15;
+        nd = nd.getMinutes()/12;
         if (nd<1)
       {
           if (x%2)
@@ -226,7 +227,13 @@ addEventListener(
       }
         else
       {
-	      host =jobless01.herokuapp.com;
+	      if (x%2)
+          {
+             host = _09
+           } else
+           {
+              host = _10
+            }
       }
         
         let url=new URL(event.request.url);
