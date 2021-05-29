@@ -1,0 +1,89 @@
+# 模糊抓取订阅链接
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/du5/free/master/sub.list
+
+# 订阅链接
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
+
+# 订阅链接2
+- type: subscribe
+  options:
+    url: https://v2ray.banyunxiaoxi.ml/
+
+
+# 网页模糊抓取
+- type: webfuzz
+  options:
+    url: https://merlinblog.xyz/wiki/freess.html
+
+# tg频道抓取
+- type: tgchannel
+  options:
+    channel: ssrList
+    num: 200
+
+# tg频道抓取2
+- type: tgchannel
+  options:
+    channel: jingpingziyuanfenxiang
+    num: 200
+
+# tg频道抓取3
+- type: tgchannel
+  options:
+    channel: ssrLists
+    num: 200
+
+# tg频道抓取4
+- type: tgchannel
+  options:
+    channel: ssrList2
+    num: 200
+
+# tg频道抓取5
+- type: tgchannel
+  options:
+    channel: freenodes
+    num: 200
+
+# tg频道抓取5
+- type: tgchannel
+  options:
+    channel: ShareCentre
+    num: 200
+
+# tg频道抓取6
+- type: tgchannel
+  options:
+    channel: V2List
+    num: 200
+
+# tg频道抓取7
+- type: tgchannel
+  options:
+    channel: dangzhibu
+    num: 200
+
+
+# 翻墙党论坛抓取
+- type: web-fanqiangdang
+  options:
+    url: https://fanqiangdang.com/forum-48-1.html
+
+# clash格式订阅链接
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/du5/free/master/file/0909/Clash.yaml
+
+# clash格式订阅链接2
+- type: clash
+  options:
+    url: https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Flink.jscdn.cn%2F1drv%2FaHR0cHM6Ly8xZHJ2Lm1zL3QvcyFBcnhoYkNPczBnMTlneU1FYWo3cUlwOWliQlFhP2U9WXZGZmVD&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true
+
+    
+# 某个网站抓取
+- type: web-freessrxyz
+  options: https://www.mattkaydiary.com/
