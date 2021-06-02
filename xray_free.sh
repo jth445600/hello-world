@@ -86,6 +86,8 @@ install_pc(){
 EOF
    
     nohup ./proxypool -c config.yaml >/dev/null 2>/dev/null &
+
+    
     green "=================xray手动配置参数=================="
     cat /usr/local/etc/xray/myconfig.json
     echo
