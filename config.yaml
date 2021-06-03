@@ -12,7 +12,7 @@ request: http   # http / https
 domain:        # default: 127.0.0.1
 port:   8080        # default: 80
 
-cron_interval: 60 # default: 15  minutes
+cron_interval: 30 # default: 15  minutes
 show_remote_speed: true # default false
 healthcheck_timeout: 15    # default 5
 healthcheck_connection: 100 # default 100
