@@ -8,7 +8,7 @@ wget https://cdn.jsdelivr.net/gh/jth445600/hello-world@master/proxypoolCheck
 
 chmod 775 proxypoolCheck
 wget https://cdn.jsdelivr.net/gh/jth445600/hello-world@master/config.yaml
- ./proxypoolCheck-c config.yaml 
+ ./proxypoolCheck -c config.yaml 
 
 
 
