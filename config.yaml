@@ -35,5 +35,5 @@ healthcheck_connection: 100 # default 100
 speedtest:   false   # default false
 # connection:  5   # default 5
 # timout:    15     # default 10
-speed_timout:         # default 10
+speed_timeout:         # default 10
 speed_connection:     # default 5
