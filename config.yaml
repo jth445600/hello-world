@@ -1,23 +1,7 @@
 # proxypool远程服务器的地址，空白为http://127.0.0.1:8080
 server_url: 
 #
-# - https://free-spy.445600.ga/ 
--  https://hm2019721.ml/ 
--  https://free-spy.445600.ga/ 
--  https://fq.lonxin.net/ 
--  https://free.dswang.ga/ 
--  https://www.233660.xyz/ 
--  https://sspool.nl/ 
-- https://sspool.herokuapp.com/ 
-- https://proxypool-guest997.herokuapp.com/ 
-- https://proxy.purel.in/ 
-- https://proxy.51798.xyz/ 
-- https://hello.stgod.com/ 
-- https://free886.herokuapp.com/ 
-- https://free.dswang.ga/ 
-- https://fq.lonxin.net/ 
-- https://ditan.ml/
-
+- http://165.232.158.203:90 
 #- https://www.yugogogogo.tk/
 # - https://www.yugogogogo.tk/clash/proxies
    # - https://www.yugogogogo.tk/clash/proxies?type=ss
@@ -25,8 +9,8 @@ server_url:
 
 # 对于您的本地服务器
 request: http   # http / https
-domain: 192.168.1.2       # default: 127.0.0.1
-port:           # default: 80
+domain:        # default: 127.0.0.1
+port:   8080        # default: 80
 
 cron_interval: 60 # default: 15  minutes
 show_remote_speed: true # default false
