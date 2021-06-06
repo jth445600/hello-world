@@ -1,7 +1,47 @@
-# 模糊抓取订阅链接
+# 模糊抓取订阅链接1
 - type: webfuzzsub
   options:
     url: https://raw.githubusercontent.com/du5/free/master/sub.list
+
+# 模糊抓取订阅链接2
+- type: webfuzzsub
+  options:
+    url: https://github.com/Leon406/Sub
+# 模糊抓取订阅链接3
+- type: webfuzzsub
+  options:
+    url: https://github.com/huaxinCLUB/NodeSpider/tree/master/WebSite
+
+    # 模糊抓取订阅链接4
+- type: webfuzzsub
+  options:
+    url: https://github.com/clashconfig/online
+
+    # 模糊抓取订阅链接5
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/shoujiyanxishe/atu/main/etsub.list
+
+   # 模糊抓取订阅链接6
+- type: webfuzzsub
+  options:
+    url: http://i.sqeven.me/discuss/detail/104
+
+   # 模糊抓取订阅链接7
+- type: webfuzzsub
+  options:
+    url: http://i.sqeven.me/know/detail/103
+
+       # 模糊抓取订阅链接8
+- type: webfuzzsub
+  options:
+    url: http://i.sqeven.me/discuss/detail/102
+
+       # 模糊抓取订阅链接9
+- type: webfuzzsub
+  options:
+    url: http://i.sqeven.me/discuss/detail/100
+
 
 # 订阅链接
 - type: subscribe
@@ -11,10 +51,176 @@
 - type: subscribe
   options:
     url: https://v2ray.banyunxiaoxi.ml/
+
+# 订阅链接3
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/skywolf627/VmessActions/main/v2ray.txt
+    
+
+# 订阅链接4
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub
+
+# 订阅链接5
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub
+
+# 订阅链接6
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/ss/proxy.txt
+
+# 订阅链接7
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/vmess.md
+
+# 订阅链接8
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/trojan.md
+
+# 订阅链接9
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/ss.md
+
+# 订阅链接10
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/proxy.md
+
+# 订阅链接11
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.txt
+
+# 订阅链接12
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/bujilangren/cangku/circleci-project-setup/0531.txt
+
+# 订阅链接13
+- type: subscribe
+  options:
+    url: https://www.233660.xyz/ss/sub
+
+# 订阅链接14
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/lion12776/kejilion/main/ss_v2ray_winxray
+
+    
+    # 订阅链接15
+- type: subscribe
+  options:
+    url: https://gitee.com/xihuancaoni/dotpclinks/raw/master/README.md
+
+   # 订阅链接16
+- type: subscribe
+  options:
+    url: https://gitee.com/xihuancaoni/dotpclinks/raw/master/README.md
+
+ # 订阅链接17
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/skywolf627/VmessActions/main/subscribe/v2ray.txt
+
+# 订阅链接18
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/skywolf627/VmessActions/main/v2ray.txt
+
+# 订阅链接19
+- type: subscribe
+  options:
+    url: https://www.233660.xyz/sip002/sub
+
+# 订阅链接20
+- type: subscribe
+  options:
+    url: https://www.233660.xyz/ssr/sub
+
+    # 订阅链接21
+- type: subscribe
+  options:
+    url: https://www.233660.xyz/vmess/sub
+
+  # 订阅链接22
+- type: subscribe
+  options:
+    url: https://www.233660.xyz/trojan/sub
+
+# 订阅链接23
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/fly0426/fj/main/suy
+
+# 订阅链接24
+- type: subscribe
+  options:
+    url: https://raw.fastgit.org/Leon406/Sub/master/sub/share/ss
+
+  # 订阅链接25
+- type: subscribe
+  options:
+    url: https://raw.fastgit.org/Leon406/Sub/master/sub/share/ssr
+
+  # 订阅链接26
+- type: subscribe
+  options:
+    url: https://raw.fastgit.org/Leon406/Sub/master/sub/share/v2
+
+  # 订阅链接27
+- type: subscribe
+  options:
+    url: https://raw.fastgit.org/Leon406/Sub/master/sub/share/tr
+
+  # 订阅链接28
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/fly0426/fj/main/xxx
+
+  # 订阅链接28
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/shoujiyanxishe/atu/main/vps
+
+
 # 网页模糊抓取
 - type: webfuzz
   options:
     url: https://merlinblog.xyz/wiki/freess.html
+
+
+# 网页模糊抓取6
+- type: webfuzz
+  options:
+    url: https://github.com/huaxinCLUB/NodeSpider/tree/master/WebSite
+
+# 网页模糊抓取5
+- type: webfuzz
+  options:
+    url: https://github.com/UmeLabs/node.umelabs.dev
+
+
+    # 网页模糊抓取4
+- type: webfuzz
+  options:
+    url: https://github.com/back8/github_freefq_free
+
+# 网页模糊抓取2
+- type: webfuzz
+  options:
+    url: https://github.com/v2ray-links/v2ray-free
+   
+   # 网页模糊抓取3
+- type: webfuzz
+  options:
+    url: https://github.com/freefq/free
 
 # tg频道抓取
 - type: tgchannel
@@ -67,6 +273,158 @@
   options:
     channel: SSRCOM
     num: 200
+# tg频道抓取10
+- type: tgchannel
+  options:
+    channel: SSRSUB
+    num: 200
+# tg频道抓取11
+- type: tgchannel
+  options:
+    channel: freebaipiao
+    num: 200
+
+# tg频道抓取
+
+- type: tgchannel
+  options:
+    channel: FreeSSRNode
+    num: 200
+
+- type: tgchannel
+  options:
+    channel: ssrtool
+    num: 200
+- type: tgchannel
+  options:
+    channel: freeshadowsock
+    num: 200
+- type: tgchannel
+  options:
+    channel: fanqiang666
+    num: 200
+- type: tgchannel
+  options:
+    channel: ssrtool_crack
+    num: 200
+- type: tgchannel
+  options:
+    channel: ssrshares
+    num: 200
+- type: tgchannel
+  options:
+    channel: gongyijichangfenxiang
+    num: 200
+- type: tgchannel
+  options:
+    channel: ssrv2taytgshare
+    num: 200
+- type: tgchannel
+  options:
+    channel: TgProxies
+    num: 200
+- type: tgchannel
+  options:
+    channel: TG_Mtproxy_1
+    num: 200
+- type: tgchannel
+  options:
+    channel: baipiaojiedian
+    num: 200
+  
+- type: tgchannel
+  options:
+    channel: daolis_miao
+    num: 200
+- type: tgchannel
+  options:
+    channel: vmesssr
+    num: 200
+- type: tgchannel
+  options:
+    channel: sphard
+    num: 200
+- type: tgchannel
+  options:
+    channel: pjzyj0
+    num: 200
+- type: tgchannel
+  options:
+    channel: jiedianfenxiang
+    num: 200
+- type: tgchannel
+  options:
+    channel: flyingboat
+    num: 200
+- type: tgchannel
+  options:
+    channel: NetfreexSrV
+    num: 200
+- type: tgchannel
+  options:
+    channel: gyjclub
+    num: 200
+- type: tgchannel
+  options:
+    channel: VPNFolder
+    num: 200
+- type: tgchannel
+  options:
+    channel: youmtp
+    num: 200
+- type: tgchannel
+  options:
+    channel: ssrkn
+    num: 200
+- type: tgchannel
+  options:
+    channel: abchz
+    num: 200
+- type: tgchannel
+  options:
+    channel: yg251153
+    num: 200
+- type: tgchannel
+  options:
+    channel: woyaofq
+    num: 200
+- type: tgchannel
+  options:
+    channel: wwx_com
+    num: 200
+- type: tgchannel
+  options:
+    channel: freessr4k
+    num: 200
+- type: tgchannel
+  options:
+    channel: ultrafreevpn
+    num: 200
+- type: tgchannel
+  options:
+    channel: VSshit
+    num: 200
+- type: tgchannel
+  options:
+    channel: InternetSSR
+    num: 200
+- type: tgchannel
+  options:
+    channel: baipiaodadui
+    num: 200
+- type: tgchannel
+  options:
+    channel: mtproxy666
+    num: 200
+- type: tgchannel
+  options:
+    channel: v2ray666
+    num: 200
+- type: tgchannel
+  options:
+    channel: freeVPNserv
+    num: 200
+
 
 # 翻墙党论坛抓取
 - type: web-fanqiangdang
@@ -81,6 +439,41 @@
 - type: clash
   options:
     url: https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Flink.jscdn.cn%2F1drv%2FaHR0cHM6Ly8xZHJ2Lm1zL3QvcyFBcnhoYkNPczBnMTlneU1FYWo3cUlwOWliQlFhP2U9WXZGZmVD&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true
+
+# clash格式订阅链接3
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml
+
+# clash格式订阅链接4
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.yml
+
+# clash格式订阅链接5
+- type: clash
+  options:
+    url: https://raw.githubusercontent.com/lion12776/kejilion/main/clash
+
+# clash格式订阅链接5
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/huaxinCLUB/NodeSpider/master/newYaml/mattkaydiary.yaml
+   
+# clash格式订阅链接6
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(50168).yml
+   
+# clash格式订阅链接7
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/skywolf627/VmessActions/main/subscribe/clash.yml
+
+    # clash格式订阅链接8
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/skywolf627/VmessActions/main/clash.yml
 
 # 某个网站抓取
 - type: web-freessrxyz
