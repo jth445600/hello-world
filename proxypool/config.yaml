@@ -1,4 +1,4 @@
-    domain: free-spy.445600.ga
+    domain: 127.0.0.1
     port:                 # default 12580
     # source list file
     source-files:
