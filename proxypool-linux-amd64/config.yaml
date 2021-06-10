@@ -5,7 +5,7 @@ port:                 # default 12580
 # source list file
 source-files:
   # use local file
-  - ./config/source.yaml
+  - ./source.yaml
   # use web file
   # - https://example.com/config/source.yaml
 
