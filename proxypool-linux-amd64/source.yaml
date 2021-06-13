@@ -195,6 +195,10 @@
   options:
     url: https://merlinblog.xyz/wiki/freess.html
 
+# 网页模糊抓取7
+- type: webfuzz
+  options:
+    url: http://feeds.feedburner.com/mattkaydiary/pZjG
 
 # 网页模糊抓取6
 - type: webfuzz

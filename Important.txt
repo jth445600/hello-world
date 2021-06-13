@@ -505,6 +505,12 @@ upstream wp_server{
 }
 
 
-
-
 wU1yQ0-fSlGHDs_7NbdoKV023u6vAXJ1RZBAUOhg
+
+
+iface eth0 inet6 static
+        address 2604:a880:4:1d0::15b:a000
+        netmask 64
+        gateway 2604:a880:4:1d0::1
+        autoconf 0
+        dns-nameservers 2001:4860:4860::8844 2001:4860:4860::8888 209.244.0.3
