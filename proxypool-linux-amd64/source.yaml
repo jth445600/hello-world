@@ -58,15 +58,15 @@
   options:
     url: https://raw.githubusercontent.com/jth445600/hello-world/master/103.txt
 
-           # 模糊抓取订阅链接9
+           # 模糊抓取订阅链接13
 - type: webfuzzsub
   options:
-    url: http://i.sqeven.me/discuss/detail/100
+    url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_1.txt
 
-           # 模糊抓取订阅链接9
+           # 模糊抓取订阅链接14
 - type: webfuzzsub
   options:
-    url: http://i.sqeven.me/discuss/detail/100
+    url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_2.txt
 
 
 
