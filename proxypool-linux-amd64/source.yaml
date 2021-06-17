@@ -42,6 +42,35 @@
   options:
     url: http://i.sqeven.me/discuss/detail/100
 
+       # 模糊抓取订阅链接10
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/jth445600/hello-world/master/100.txt
+
+
+           # 模糊抓取订阅链接11
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/jth445600/hello-world/master/102.txt
+
+           # 模糊抓取订阅链接12
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/jth445600/hello-world/master/103.txt
+
+           # 模糊抓取订阅链接9
+- type: webfuzzsub
+  options:
+    url: http://i.sqeven.me/discuss/detail/100
+
+           # 模糊抓取订阅链接9
+- type: webfuzzsub
+  options:
+    url: http://i.sqeven.me/discuss/detail/100
+
+
+
+
 
 # 订阅链接
 - type: subscribe
