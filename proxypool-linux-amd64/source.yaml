@@ -63,12 +63,30 @@
   options:
     url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_1.txt
 
-           # 模糊抓取订阅链接14
+   # 模糊抓取订阅链接14
 - type: webfuzzsub
   options:
     url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_2.txt
 
+   # 模糊抓取订阅链接15
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/shoujiyanxishe/atu/main/etsub.list
 
+       # 模糊抓取订阅链接16
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/shoujiyanxishe/atu/main/etproxytest
+
+       # 模糊抓取订阅链接17
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/Leon406/jsdelivr/master/subscribe/sub.txt
+
+       # 模糊抓取订阅链接18
+- type: webfuzzsub
+  options:
+    url: https://raw.githubusercontent.com/Leon406/Sub/master/sub/pool/subs
 
 
 
