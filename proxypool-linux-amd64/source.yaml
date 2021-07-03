@@ -218,6 +218,10 @@
   options:
     url: https://raw.githubusercontent.com/shoujiyanxishe/atu/main/vps
 
+  # 订阅链接29
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/bujilangren/cangku/circleci-project-setup/SurfShark.txt
 
 # 网页模糊抓取
 - type: webfuzz
