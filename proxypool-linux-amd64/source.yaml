@@ -223,6 +223,13 @@
   options:
     url: https://raw.githubusercontent.com/bujilangren/cangku/circleci-project-setup/SurfShark.txt
 
+  # 订阅链接30
+- type: subscribe
+  options:
+    url: https://suo.yt/h6QALFa
+
+
+
 # 网页模糊抓取
 - type: webfuzz
   options:
@@ -511,6 +518,12 @@
 - type: clash
   options:
     url:  https://raw.githubusercontent.com/skywolf627/VmessActions/main/clash.yml
+  
+    # clash格式订阅链接9
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/zyzmzyz/free-nodes/master/Clash.yml
+
 
 # 某个网站抓取
 - type: web-freessrxyz
