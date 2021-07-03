@@ -228,6 +228,10 @@
   options:
     url: https://suo.yt/h6QALFa
 
+  # 订阅链接31
+- type: subscribe
+  options:
+    url: https://suo.yt/O2oKaRU
 
 
 # 网页模糊抓取
