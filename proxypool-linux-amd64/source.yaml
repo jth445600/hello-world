@@ -242,6 +242,11 @@
 # 网页模糊抓取7
 - type: webfuzz
   options:
+    url: https://raw.githubusercontent.com/Leon406/Sub/master/sub/pools
+
+# 网页模糊抓取7
+- type: webfuzz
+  options:
     url: http://feeds.feedburner.com/mattkaydiary/pZjG
 
 # 网页模糊抓取6
