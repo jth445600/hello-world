@@ -251,6 +251,12 @@
   options:
     url: https://suo.yt/O2oKaRU
 
+  # 订阅链接31
+- type: subscribe
+  options:
+    url: https://iwxf.netlify.app
+
+
 
 # 网页模糊抓取
 - type: webfuzz
