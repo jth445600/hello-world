@@ -573,6 +573,11 @@
   options:
     url:  https://raw.githubusercontent.com/oslook/clash-freenode/main/clash.yaml
 
+    # clash格式订阅链接11
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/Happyflying666/clash/main/list
+
 
 
 
