@@ -523,6 +523,11 @@
   options:
     channel: freeVPNserv
     num: 200
+- type: tgchannel
+  options:
+    channel: ShadowsocksRssr
+    num: 200
+
 
 
 # 翻墙党论坛抓取
