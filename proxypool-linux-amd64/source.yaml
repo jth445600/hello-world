@@ -568,6 +568,13 @@
   options:
     url:  https://raw.githubusercontent.com/zyzmzyz/free-nodes/master/Clash.yml
 
+    # clash格式订阅链接10
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/oslook/clash-freenode/main/clash.yaml
+
+
+
 
 # 某个网站抓取
 - type: web-freessrxyz
