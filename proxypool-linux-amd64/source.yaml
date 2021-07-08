@@ -89,6 +89,17 @@
     url: https://raw.githubusercontent.com/Leon406/Sub/master/sub/pool/subs
 
 
+# 模糊抓取订阅链接19
+ - type: webfuzzsub
+   options:
+           url: https://github.com/jth445600/proxy-pool-check/raw/main/freev3.txt
+           
+# 模糊抓取订阅链接20
+ - type: webfuzzsub
+   options:
+           url: https://github.com/jth445600/proxy-pool-check/raw/main/freev2.txt
+
+
 
 # 订阅链接
 - type: subscribe
