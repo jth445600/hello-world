@@ -268,10 +268,17 @@
   options:
     url: https://iwxf.netlify.app
 
-  # 订阅链接31
+  # 订阅链接32
 - type: subscribe
   options:
     url: https://github.com/liushengweinielulu/V2RAY/raw/main/V2
+
+  # 订阅链接32
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/webdao/v2ray/master/nodes.txt
+
+
 
 # 网页模糊抓取
 - type: webfuzz
