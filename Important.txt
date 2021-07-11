@@ -514,3 +514,21 @@ iface eth0 inet6 static
         gateway 2604:a880:4:1d0::1
         autoconf 0
         dns-nameservers 2001:4860:4860::8844 2001:4860:4860::8888 209.244.0.3
+
+
+
+   google id   310761746836-tagl1ius84efcs3o8ptbgh90dndbf9mb.apps.googleusercontent.com
+
+   key 8WT010-A43uo8JYfSEKMNq2J
+
+   class config:
+    BOT_TOKEN = "1811036053:AAEFUWvhelkRAc4RgAV4eRohGVoP-irTejM"
+    APP_ID = "1715543"
+    API_HASH = "803b8b20ef128b856f80a2f69a834640"
+    DATABASE_URL = "postgres://viiwkevsevxwvj:b08955767ba3544d13905b6d95eac7e5445eb7fc6e5d963dce43eb95178f4b72@ec2-52-6-77-239.compute-1.amazonaws.com:5432/d9abi1m8vkpot7"
+    SUDO_USERS = "742197142" # Sepearted by space.
+    SUPPORT_CHAT_LINK = "https://viperadnan-git.github.io"
+    DOWNLOAD_DIRECTORY = "./downloads/"
+    G_DRIVE_CLIENT_ID = "310761746836-tagl1ius84efcs3o8ptbgh90dndbf9mb.apps.googleusercontent.com"
+    G_DRIVE_CLIENT_SECRET = "8WT010-A43uo8JYfSEKMNq2J"
+
