@@ -274,9 +274,24 @@ WantedBy=multi-user.target
 
 
 
+{
+  "aria2-server": "http://165.232.154.1:6800/jsonrpc",
+  "aria2-key": "c133970ce5afcd45ecaa",
+  "bot-key": "1854335990:AAG6zmH5ABkoO2PZCxBTLl1Hxln-vQM25Pc",
+  "user-id": "742197142",
+  "max-index": 10,
+  "sign": "do-sf",
+  "language": "zh-CN",
+  "downloadFolder": "/root/downloads",
+  "moveFolder":""
+}
 
 
 
+
+
+
+postgres
         /usr/local/ServerStatus/web
 
 
@@ -470,3 +485,11 @@ https://youtu.be/WTEaGUIMH8I
 https://youtu.be/bGuw4S0gPlg
 01-在centos7上搭建v2ray+ws+tls+wordpress并开启CDN
 https://youtu.be/dtTQBp-peCM
+
+
+#do  gclone 配置文件#############
+
+
+/root/folderrclone/accounts/00237f5b0e4f6327ed3eb6e61059beec81c1b739.json
+
+/root/folderrclone/accounts/
