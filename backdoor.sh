@@ -28,6 +28,12 @@ stop_firewall(){
 install_needed_tools(){
 	yum update -y
 	yum install wget  git -y
+	yum -y install ntpdate
+}
+
+check_time(){
+	timedatectl set-timezone Asia/Shanghai
+	ntpdate ntp1.aliyun.com
 }
 
 run_bbr(){
@@ -53,7 +59,7 @@ run_xray(){
 	git clone https://github.com/XrayR-project/XrayR-release
 	cd XrayR-release
 	# dc pull  # 更新xrary
-	
+
 }
 
 function start_menu(){
@@ -65,8 +71,8 @@ function start_menu(){
     echo -e "\033[34m\033[01m系统：\033[0m \033[32m\033[01m仅仅支持centos7\033[0m"
     green "======================================================="
     green " 1. 安装bbr选5(通用)"
-    red " 2. 安装docker（通用） （出现active (running)表示安装成功） "
-    green " 安装xrary命令（通用）"
+    red " 2. 安装docker and xray） ） "
+    #green "3 "
     yellow " 0. Exit"
     echo
     read -p "输入数字:" num
@@ -74,15 +80,16 @@ function start_menu(){
     1)
     stop_firewall
     install_needed_tools
-    run_bbr
+    #run_bbr
     ;;
     
     2)
     run_docker
-    ;;
-    3)
     run_xray
     ;;
+    # 3)
+    
+    # ;;
     0)
     exit 1
     ;;
