@@ -532,3 +532,10 @@ iface eth0 inet6 static
     G_DRIVE_CLIENT_ID = "310761746836-tagl1ius84efcs3o8ptbgh90dndbf9mb.apps.googleusercontent.com"
     G_DRIVE_CLIENT_SECRET = "8WT010-A43uo8JYfSEKMNq2J"
 
+
+youtube uploader bot config.py
+
+
+274480013212-hmcvrpscuhu9iadnu05jr9io3j009b6e.apps.googleusercontent.com
+
+rm5yjMb7vQoECDvuJuorUhde
