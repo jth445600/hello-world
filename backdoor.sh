@@ -26,7 +26,7 @@ stop_firewall(){
 }
 
 install_needed_tools(){
-	yum update -y
+	#yum update -y
 	yum install wget  git -y
 	yum -y install ntpdate
 }
