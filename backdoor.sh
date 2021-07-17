@@ -80,6 +80,7 @@ function start_menu(){
     1)
     stop_firewall
     install_needed_tools
+    check_time
     #run_bbr
     ;;
     
