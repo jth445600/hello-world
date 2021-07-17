@@ -16,7 +16,7 @@ yellow(){
 
 stop_firewall()  {
 	##  关闭防火墙命令centos
-	 systemctl status firewalld.service #（查看防火墙状态）
+	systemctl status firewalld.service #（查看防火墙状态）
 	systemctl disable firewalld #（停止防火墙开机启动）
 	systemctl stop firewalld #（停止防火墙）
 }
