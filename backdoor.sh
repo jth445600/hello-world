@@ -70,8 +70,8 @@ function start_menu(){
     echo -e "\033[34m\033[01m描述：\033[0m \033[32m\033[01m作者：Laurence666\033[0m"
     echo -e "\033[34m\033[01m系统：\033[0m \033[32m\033[01m仅仅支持centos7\033[0m"
     green "======================================================="
-    green " 1. 安装bbr选5(通用)"
-    red " 2. 安装docker and xray"
+    green " 1. 安装bbr+docker+xrat "
+    #red " 2. 安装docker and xray"
     #green "3 "
     yellow " 0. Exit"
     echo
@@ -81,13 +81,14 @@ function start_menu(){
     stop_firewall
     install_needed_tools
     check_time
-    #run_bbr
-    ;;
-    
-    2)
+    run_bbr
     run_docker
     run_xray
     ;;
+    
+    # 2)
+    
+    # ;;
     # 3)
     
     # ;;
