@@ -71,7 +71,7 @@ function start_menu(){
     echo -e "\033[34m\033[01m系统：\033[0m \033[32m\033[01m仅仅支持centos7\033[0m"
     green "======================================================="
     green " 1. 安装bbr选5(通用)"
-    red " 2. 安装docker and xray） ） "
+    red " 2. 安装docker and xray"
     #green "3 "
     yellow " 0. Exit"
     echo
