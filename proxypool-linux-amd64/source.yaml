@@ -278,6 +278,12 @@
   options:
     url: https://raw.githubusercontent.com/webdao/v2ray/master/nodes.txt
 
+  # 订阅链接32
+- type: subscribe
+  options:
+    url: https://99uu.wtf/key=2TjawynTKi82/
+
+
 
 
 # 网页模糊抓取
