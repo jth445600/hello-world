@@ -5,9 +5,9 @@ port:                 # default 12580
 # source list file
 source-files:
   # use local file
-  - ./source.yaml
+  #- ./source.yaml
   # use web file
-  # - https://example.com/config/source.yaml
+   - https://raw.githubusercontent.com/jth445600/hello-world/master/proxypool-linux-amd64/source.yaml
 
 # ======= 可选项，留空使用default值  ======= #
 
