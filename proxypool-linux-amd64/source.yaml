@@ -533,7 +533,11 @@
   options:
     channel: ShadowsocksRssr
     num: 200
-
+    
+- type: tgchannel
+  options:
+    channel: Goodsharefeng
+    num: 200
 
 
 # 翻墙党论坛抓取
