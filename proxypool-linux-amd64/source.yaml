@@ -98,7 +98,25 @@
   options:
     url: https://github.com/jth445600/proxy-pool-check/raw/main/freev2.txt
            
+       # 模糊抓取订阅链接21
+- type: webfuzzsub
+  options:
+    url: https://github.com/githubvpn007/v2rayNvpn#%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB
 
+       # 模糊抓取订阅链接22
+- type: webfuzzsub
+  options:
+    url: https://github.com/emuiavip/ssr
+
+       # 模糊抓取订阅链接23
+- type: webfuzzsub
+  options:
+    url: https://github.com/ermaozi/get_subscribe
+
+       # 模糊抓取订阅链接23
+- type: webfuzzsub
+  options:
+    url: https://github.com/colatiger/v2ray-nodes
 
 
 
