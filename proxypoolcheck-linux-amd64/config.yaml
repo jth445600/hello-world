@@ -5,6 +5,8 @@ server_url:
 - https://proxy.yugogo.xyz/
 - https://etproxypool.ga/
 -  https://hm2019721.ml/ 
+- https://proxy-pool-check.onrender.com/clash/proxies
+- http://165.232.154.1:90/clash/proxies?c=CN,HK,TW,JP,KR,SG,US
 -  http://127.0.0.1:12580 
 -  https://fq.lonxin.net/ 
 -  https://free.dswang.ga/ 
