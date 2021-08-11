@@ -267,9 +267,9 @@ download_pc(){
     green "==============="
     sleep 1
     yum install screen wget nano vim -y
-    wget https://github.com/jth445600/hello-world/raw/master/proxypoolcheck-linux-amd64/proxypoolCheck
+    wget https://github.com/laurence8888/proxy-pool-check-speed/raw/main/proxypoolCheck
     chmod 755 proxypoolCheck
-    wget https://github.com/jth445600/hello-world/raw/master/proxypoolcheck-linux-amd64/config.yaml
+    wget https://github.com/laurence8888/proxy-pool-check-speed/raw/main/config.yaml
     nohup ./proxypoolCheck -c config.yaml  &
     #  nohup ./proxypool -c config.yaml >/dev/null 2>/dev/null &
 }
