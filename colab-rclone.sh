@@ -35,6 +35,13 @@ root_folder_id =
 
 EOF
 
+# mdkir aliyun
+
+# rclone mount aliyun: aliyun --allow-other --allow-non-empty --vfs-cache-mode writes &
+
+ps aux | grep webdav
+
+
 screen -S aliyun
 
 rclone copy aliyun:  001:aliyun -P -vv 
