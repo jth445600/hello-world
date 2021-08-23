@@ -13,6 +13,10 @@ nohup sudo java -jar webdav-2.4.1.jar --aliyundrive.refresh-token="4c0dcdd1d0974
 
 sudo apt install screen vim nano  -y 
 
+mkdir /home/user/.config/rclone
+
+#touch /home/user/.config/rclone/rclone.conf
+
 cat > /home/user/.config/rclone/rclone.conf  <<-EOF
  [aliyun]
 type = webdav
@@ -31,4 +35,6 @@ root_folder_id =
 
 EOF
 
+screen -S aliyun
 
+rclone copy aliyun:  001:aliyun -P -vv 
