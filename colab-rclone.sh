@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#使用方法 
+#wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/colab-rclone.sh" && chmod +x install.sh && bash install.sh
+
+
+
 curl https://rclone.org/install.sh | sudo bash
 
 wget https://github.com/zxbu/webdav-aliyundriver/releases/download/v2.4.1/webdav-2.4.1.jar
