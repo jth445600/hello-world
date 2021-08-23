@@ -612,6 +612,7 @@ ssl_install() {
     judge "安装 SSL 证书生成脚本依赖"
 
     curl https://get.acme.sh | sh
+    "$HOME"/.acme.sh/acme.sh  --register-account -m my@example.com
     judge "安装 SSL 证书生成脚本"
 }
 domain_check() {
