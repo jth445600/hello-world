@@ -6,7 +6,7 @@ wget https://github.com/zxbu/webdav-aliyundriver/releases/download/v2.4.1/webdav
  
 nohup sudo java -jar webdav-2.4.1.jar --aliyundrive.refresh-token="4c0dcdd1d097410882fc46bdd4af62f5" --server.port="8090"  &
 
-apt install screen -y 
+sudo apt install screen vim nano  -y 
 
 cat > /home/user/.config/rclone/rclone.conf  <<-EOF
  [aliyun]
