@@ -8,6 +8,8 @@
 curl https://rclone.org/install.sh | sudo bash
 
 wget https://github.com/zxbu/webdav-aliyundriver/releases/download/v2.4.1/webdav-2.4.1.jar
+
+sudo yum install java-11-openjdk  -y || sudo  apt install  openjdk-11-jdk -y
  
 nohup sudo java -jar webdav-2.4.1.jar --aliyundrive.refresh-token="4c0dcdd1d097410882fc46bdd4af62f5" --server.port="8090"  &
 
@@ -44,4 +46,4 @@ ps aux | grep webdav
 
 screen -S aliyun
 
-rclone copy aliyun:  001:aliyun -P -vv 
+echo "rclone copy aliyun:  001:aliyun -P -vv" 
