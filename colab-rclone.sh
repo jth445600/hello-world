@@ -3,7 +3,11 @@
 #使用方法 
 #wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/jth445600/hello-world/master/colab-rclone.sh" && chmod +x install.sh && bash install.sh
 
+sudo su
+
 bash <(wget -qO- https://git.io/gclone.sh)
+
+exit
 
 wget https://445600.ml/folderrclone.zip
 
@@ -48,6 +52,6 @@ EOF
 ps aux | grep webdav
 
 
-screen -S aliyun
+echo "screen -S aliyun"
 
 echo "gclone copy aliyun:  001:aliyun -P -vv" 
