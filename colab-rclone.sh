@@ -8,10 +8,17 @@ sudo su
 bash <(wget -qO- https://git.io/gclone.sh)
 
 exit
+# 安装rclone
+curl https://rclone.org/install.sh | sudo bash
 
 wget https://445600.ml/folderrclone.zip
 
 unzip folderrclone.zip
+
+wget https://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/3.5.0/baidunetdisk_3.5.0_amd64.deb
+
+sudo dpkg -i baidunetdisk_3.5.0_amd64.deb
+
 
 #curl https://rclone.org/install.sh | sudo bash
 
@@ -42,7 +49,6 @@ user = admin
 pass = fybMlbiIqw0zCAqDwN4x3O6qsIw2
 bearer_token = 445600
 
-
 EOF
 
 # mdkir aliyun
@@ -55,3 +61,19 @@ ps aux | grep webdav
 echo "screen -S aliyun"
 
 echo "gclone copy aliyun:  001:aliyun -P -vv" 
+
+# 卸载命令（务必）：fusermount -qzu aliyun
+   
+# 挂载命令（下载模式）# nohup gclone mount aliyun: aliyun --allow-other --allow-non-empty --vfs-cache-mode writes &
+
+
+docker run -d \
+      --name clouddrive \
+      --restart unless-stopped \
+      -v /home/user:/CloudNAS:shared \
+      -v /home/user/Downloads:/Config \
+      -v /home/user/Music:/media:shared \
+      -p 9798:9798 \
+     --privileged \
+     --device /dev/fuse:/dev/fuse \
+     cloudnas/clouddrive
