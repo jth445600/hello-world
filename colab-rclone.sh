@@ -5,7 +5,7 @@
 
 sudo su
 
-bash <(wget -qO- https://git.io/gclone.sh)
+bash <(wget -qO- https://git.io/gclone.sh)  
 
 exit
 # 安装rclone
