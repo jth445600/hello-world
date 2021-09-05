@@ -3,7 +3,7 @@ server_url:
 - https://raw.githubusercontent.com/jth445600/proxy-pool/main/clash/proxies
 #
 # - https://free-spy.445600.ga/ 
-- http://129.146.187.161:12580/
+- http://129.146.187.161:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - https://proxy.yugogo.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
 -  https://hm2019721.ml/clash/proxies?c=CN,TW,JP,KR,SG,HK
 #-  http://127.0.0.1:12580 
@@ -30,8 +30,8 @@ server_url:
 
 # 对于您的本地服务器
 request: http   # http / https
-domain:       # default: 127.0.0.1
-port:   90        # default: 80
+domain:  127.0.0.1      # default: 127.0.0.1
+port:          # default: 80
 
 cron_interval: 60 # default: 15  minutes
 show_remote_speed:  # default false
