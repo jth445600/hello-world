@@ -31,7 +31,7 @@ server_url:
 # 对于您的本地服务器
 request: http   # http / https
 domain:  127.0.0.1      # default: 127.0.0.1
-port:          # default: 80
+port:     90     # default: 80
 
 cron_interval: 60 # default: 15  minutes
 show_remote_speed:  # default false
