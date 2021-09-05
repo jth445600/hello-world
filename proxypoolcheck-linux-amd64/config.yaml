@@ -1,0 +1,44 @@
+# proxypool远程服务器的地址，空白为http://127.0.0.1:8080
+server_url: 
+- https://raw.githubusercontent.com/jth445600/proxy-pool/main/clash/proxies
+#
+# - https://free-spy.445600.ga/ 
+- http://129.146.187.161:12580/
+- https://proxy.yugogo.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
+-  https://hm2019721.ml/clash/proxies?c=CN,TW,JP,KR,SG,HK
+#-  http://127.0.0.1:12580 
+- http://165.232.154.1:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
+#-  https://fq.lonxin.net/  
+-  https://www.233660.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
+-  https://sspool.nl/clash/proxies?c=CN,TW,JP,KR,SG,HK 
+- https://free.kingfu.cf/clash/proxies?c=CN,TW,JP,KR,SG,HK
+- https://sspool.herokuapp.com/clash/proxies?c=CN,TW,JP,KR,SG,HK 
+#- https://proxy.purel.in/ 
+#- https://proxy.51798.xyz/ 
+#- https://hello.stgod.com/ 
+- https://free886.herokuapp.com/clash/proxies?c=CN,TW,JP,KR,SG,HK 
+- https://sspool.nl/clash/proxies?c=CN,TW,JP,KR,SG,HK
+- https://github.com/laurence8888/proxy-pool/raw/main/clash/proxies
+- https://etproxypool.ga/clash/proxies?c=CN,TW,JP,KR,SG,HK 
+#- https://ditan.ml/
+
+
+#- https://www.yugogogogo.tk/
+# - https://www.yugogogogo.tk/clash/proxies
+   # - https://www.yugogogogo.tk/clash/proxies?type=ss
+
+
+# 对于您的本地服务器
+request: http   # http / https
+domain:       # default: 127.0.0.1
+port:   90        # default: 80
+
+cron_interval: 60 # default: 15  minutes
+show_remote_speed:  # default false
+healthcheck_timeout: 15    # default 5
+healthcheck_connection: 100 # default 100
+speedtest:   true   # default false
+#connection:  5   # default 5
+#timout:    15     # default 10
+speed_timeout:    5     # default 10
+speed_connection:  20   # default 5
