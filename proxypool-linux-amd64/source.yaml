@@ -636,10 +636,15 @@
   options:
     url:  https://raw.githubusercontent.com/Happyflying666/clash/main/list
 
-    # clash格式订阅链接11
+    # clash格式订阅链接12
 - type: clash
   options:
     url:  https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+
+    # clash格式订阅链接13
+- type: clash
+  options:
+    url:  https://raw.githubusercontent.com/chfchf0306/clash/main/clash
 
 
 
