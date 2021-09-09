@@ -646,9 +646,6 @@
   options:
     url:  https://raw.githubusercontent.com/chfchf0306/clash/main/clash
 
-
-
-
 # 某个网站抓取
 - type: web-freessrxyz
   options:
