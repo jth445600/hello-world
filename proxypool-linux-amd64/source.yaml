@@ -40,33 +40,33 @@
        # 模糊抓取订阅链接9
 - type: webfuzzsub
   options:
-    url: http://i.sqeven.me/discuss/detail/100
+     url: http://i.sqeven.me/discuss/detail/100
 
-       # 模糊抓取订阅链接10
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/jth445600/hello-world/master/100.txt
+#        # 模糊抓取订阅链接10
+# - type: webfuzzsub
+#   options:
+#     url: https://raw.githubusercontent.com/jth445600/hello-world/master/100.txt
 
 
-           # 模糊抓取订阅链接11
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/jth445600/hello-world/master/102.txt
+#            # 模糊抓取订阅链接11
+# - type: webfuzzsub
+#   options:
+#     url: https://raw.githubusercontent.com/jth445600/hello-world/master/102.txt
 
-           # 模糊抓取订阅链接12
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/jth445600/hello-world/master/103.txt
+#            # 模糊抓取订阅链接12
+# - type: webfuzzsub
+#   options:
+#     url: https://raw.githubusercontent.com/jth445600/hello-world/master/103.txt
 
-           # 模糊抓取订阅链接13
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_1.txt
+#            # 模糊抓取订阅链接13
+# - type: webfuzzsub
+#   options:
+#     url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_1.txt
 
-   # 模糊抓取订阅链接14
-- type: webfuzzsub
-  options:
-    url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_2.txt
+#    # 模糊抓取订阅链接14
+# - type: webfuzzsub
+#   options:
+#     url: https://raw.githubusercontent.com/jth445600/hello-world/master/104_2.txt
 
    # 模糊抓取订阅链接15
 - type: webfuzzsub
@@ -91,12 +91,12 @@
        # 模糊抓取订阅链接19
 - type: webfuzzsub
   options:
-    url: https://github.com/jth445600/proxy-pool-check/raw/main/freev3.txt   
+    url: https://raw.githubusercontent.com/Laurence8866/proxy-pool-check/main/freev2.txt   
 
        # 模糊抓取订阅链接20
 - type: webfuzzsub
   options:
-    url: https://github.com/jth445600/proxy-pool-check/raw/main/freev2.txt
+    url: https://raw.githubusercontent.com/Laurence8866/proxy-pool-check/main/freev3.txt
            
        # 模糊抓取订阅链接21
 - type: webfuzzsub

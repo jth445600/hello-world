@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "routes": [
+      {"src": "/(.*)","dest": "https://cloudreve-railway-production.up.railway.app/$1"}
+  ]
+}
