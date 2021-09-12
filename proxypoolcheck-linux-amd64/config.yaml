@@ -9,6 +9,7 @@ server_url:
 #-  http://127.0.0.1:12580 
 - http://165.232.154.1:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
 #-  https://fq.lonxin.net/  
+- http://129.146.245.131:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
 -  https://www.233660.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
 -  https://sspool.nl/clash/proxies?c=CN,TW,JP,KR,SG,HK 
 - https://free.kingfu.cf/clash/proxies?c=CN,TW,JP,KR,SG,HK
