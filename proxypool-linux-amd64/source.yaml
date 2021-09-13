@@ -317,6 +317,12 @@
   options:
     url: https://github.com/changfeng2021/free-v2ray-daily/raw/master/sub
 
+  # 订阅链接37
+- type: subscribe
+  options:
+    url: https://yun.xiaoyao01.com/dingyue/fenxiang.txt
+
+
 
 # 网页模糊抓取
 - type: webfuzz
@@ -421,12 +427,23 @@
     channel: freebaipiao
     num: 200
 
+# tg频道抓取11
+- type: tgchannel
+  options:
+    channel: mftizi
+    num: 200
+
+
 # tg频道抓取
 
 - type: tgchannel
   options:
     channel: FreeSSRNode
     num: 200
+- type: tgchannel
+  options:
+    channel: fqswhj
+    num: 200    
 
 - type: tgchannel
   options:
