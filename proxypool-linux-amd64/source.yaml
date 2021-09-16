@@ -118,7 +118,13 @@
   options:
     url: https://github.com/colatiger/v2ray-nodes
 
+       # 模糊抓取订阅链接24
+- type: webfuzzsub
+  options:
+    url: https://445600.ml/mohudingyue
 
+
+    
 
 # 订阅链接
 - type: subscribe
