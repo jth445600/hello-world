@@ -2,7 +2,7 @@
 server_url: 
 - https://raw.githubusercontent.com/jth445600/proxy-pool/main/clash/proxies
 #
-# - https://free-spy.445600.ga/ 
+ - https://7beb-2a02-180-6-1-00-3e6a.ngrok.io/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - http://129.146.187.161:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - https://proxy.yugogo.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
 -  https://hm2019721.ml/clash/proxies?c=CN,TW,JP,KR,SG,HK
