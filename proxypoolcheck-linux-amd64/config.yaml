@@ -6,6 +6,7 @@ server_url:
 - http://129.146.187.161:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - https://proxy.yugogo.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
 -  https://hm2019721.ml/clash/proxies?c=CN,TW,JP,KR,SG,HK
+- https://toteto-yunbaitech.cloud.okteto.net/clash/proxies?c=CN,TW,JP,KR,SG,HK
 #-  http://127.0.0.1:12580 
 - https://wild-wave-1175.yunbai.workers.dev/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - http://165.232.154.1:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
