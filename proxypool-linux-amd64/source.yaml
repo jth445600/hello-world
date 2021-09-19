@@ -451,8 +451,15 @@
 
 - type: tgchannel
   options:
+    channel: masco899
+    num: 200
+
+- type: tgchannel
+  options:
     channel: FreeSSRNode
     num: 200
+    
+
 - type: tgchannel
   options:
     channel: fqswhj
