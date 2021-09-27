@@ -1,0 +1,7 @@
+cloudflare地址：
+
+www.cloudflare.com
+
+一键安装代码：
+
+apt install -y curl  wget  socat || yum install -y curl  wget socat  && wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
