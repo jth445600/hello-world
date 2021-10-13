@@ -4,6 +4,7 @@ server_url:
 - https://raw.githubusercontent.com/jth445600/proxy-pool/main/clash/proxies
 - http://frp1.freefrp.net:21388/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - http://129.146.187.161:12580/clash/proxies?c=CN,TW,JP,KR,SG,HK
+- http://129.146.167.221:12580/clash/proxies
 - https://proxy.yugogo.xyz/clash/proxies?c=CN,TW,JP,KR,SG,HK
 -  https://hm2019721.ml/clash/proxies?c=CN,TW,JP,KR,SG,HK
 - https://toteto-yunbaitech.cloud.okteto.net/clash/proxies?c=CN,TW,JP,KR,SG,HK
