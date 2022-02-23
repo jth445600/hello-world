@@ -1,39 +1,39 @@
 # 订阅链接
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
+    url: http://polished-moon-5d49.jth445600.workers.dev/sub?target=v2ray&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fspeed%3D15%2C3000&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false
 # 订阅链接2
 - type: subscribe
   options:
-    url: https://v2ray.banyunxiaoxi.ml/
+    url: http://polished-moon-5d49.jth445600.workers.dev/sub?target=v2ray&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fspeed%3D15%2C3000&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false
 
 # 订阅链接3
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/skywolf627/VmessActions/main/v2ray.txt
+    url: https://sub.maoxiongnet.com/sub?target=v2ray&url=https%3A%2F%2Fzua426.cf%2Fclash%2Fproxies%3Fspeed%3D15%2C3000&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
     
 
 # 订阅链接4
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub
-
+    url: https://fastly.jsdelivr.net/gh/obcbo/auto-subscribe/subscribe/v2ray.txt
+    
 # 订阅链接5
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub
+    url: https://ghproxy.com/https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/freebaipiao.yaml
 
 # 订阅链接6
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/ss/proxy.txt
+    url: https://ghproxy.com/https://raw.githubusercontent.com/linke5/free-/main/Free-new.md
 
 # 订阅链接7
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/vmess.md
+    url: https://mkkhack.pw/ssr.php
 
 # 订阅链接8
 - type: subscribe
   options:
-    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/trojan.md
+    url: https://ghproxy.com/https://raw.githubusercontent.com/chfchf0306/jeidian4.18/main/4.18
