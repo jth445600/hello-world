@@ -37,3 +37,31 @@
 - type: subscribe
   options:
     url: https://ghproxy.com/https://raw.githubusercontent.com/chfchf0306/jeidian4.18/main/4.18
+
+# 订阅链接9
+- type: subscribe
+  options:
+    url: https://heinu.gimovo.com/jd/jiedian.php?id=@vpnagency&lj=tongyong
+
+# 订阅链接10
+- type: subscribe
+  options:
+    url: https://dllx.tk/GreenFishYYDS
+    
+ 
+# 订阅链接11
+- type: subscribe
+  options:
+    url: https://v1.mk/DpUMjR9
+  
+# 订阅链接12
+- type: subscribe
+  options:
+    url: https://wds.ecsxs.com/220421.json
+
+# 订阅链接13
+- type: subscribe
+  options:
+    url: https://ghproxy.com/?q=https%3A%2F%2Fraw.githubusercontent.com%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg
+    
+   
