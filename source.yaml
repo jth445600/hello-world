@@ -1,0 +1,39 @@
+# 订阅链接
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray
+# 订阅链接2
+- type: subscribe
+  options:
+    url: https://v2ray.banyunxiaoxi.ml/
+
+# 订阅链接3
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/skywolf627/VmessActions/main/v2ray.txt
+    
+
+# 订阅链接4
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub
+
+# 订阅链接5
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub
+
+# 订阅链接6
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/ss/proxy.txt
+
+# 订阅链接7
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/vmess.md
+
+# 订阅链接8
+- type: subscribe
+  options:
+    url: https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/trojan.md
