@@ -64,4 +64,9 @@
   options:
     url: https://ghproxy.com/?q=https%3A%2F%2Fraw.githubusercontent.com%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg
     
-   
+ # clash格式订阅链接1
+- type: clash
+  options:
+    url:  https://ghproxy.com/https://raw.githubusercontent.com/freebaipiao/freebaipiao/main/freebaipiao.yaml 
+ 
+
