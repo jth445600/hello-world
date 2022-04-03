@@ -63,7 +63,13 @@
 - type: subscribe
   options:
     url: https://ghproxy.com/?q=https%3A%2F%2Fraw.githubusercontent.com%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg%2FJsnzkpg
-    
+ 
+# 订阅链接14
+- type: subscribe
+  options:
+    url: http://polished-moon-5d49.jth445600.workers.dev/sub?target=v2ray&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DHK%2CJP%2CKR%2CTW%2CCN%2CSG&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false
+  
+  
  # clash格式订阅链接1
 - type: clash
   options:
